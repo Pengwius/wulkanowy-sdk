@@ -52,7 +52,7 @@ class ScrapperRemoteTest : BaseTest() {
     fun getPasswordResetCaptchaCode() {
         val code = runBlocking { api.getPasswordResetCaptcha("https://fakelog.cf", "Default") }
 
-        assertEquals("https://cufs.fakelog.cf/Default/AccountManage/UnlockAccount", code.first)
+        assertEquals("https://cufs.wulkanowy.net.pl/Default/AccountManage/UnlockAccount", code.first)
         assertEquals("6LeAGMYUAAAAAMszd5VWZTEb5WQHqsNT1F4GCqUd", code.second)
     }
 

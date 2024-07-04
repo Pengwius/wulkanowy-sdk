@@ -10,7 +10,7 @@ Poniżej przedstawiamy przykład pobrania ocen przez nasze Sdk, od początkowego
 // ustawiamy dane logowania
 val userEmail = "jan@fakelog.cf"
 val userPassword = "jan123"
-val host = "https://fakelog.cf/"
+val host = "https://wulkanowy.net.pl/"
 
 // tworzymy obiekt Sdk i pobieramy listę dostępnych uczniów
 val sdk = Sdk()

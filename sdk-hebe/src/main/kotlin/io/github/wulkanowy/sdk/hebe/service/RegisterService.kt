@@ -1,7 +1,7 @@
 package io.github.wulkanowy.sdk.hebe.service
 
-import io.github.wulkanowy.sdk.hebe.ApiRequest
-import io.github.wulkanowy.sdk.hebe.ApiResponse
+import io.github.wulkanowy.sdk.hebe.models.ApiRequest
+import io.github.wulkanowy.sdk.hebe.models.ApiResponse
 import io.github.wulkanowy.sdk.hebe.register.RegisterRequest
 import io.github.wulkanowy.sdk.hebe.register.RegisterResponse
 import io.github.wulkanowy.sdk.hebe.register.StudentInfo

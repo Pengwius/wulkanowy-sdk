@@ -1,11 +1,10 @@
-package io.github.wulkanowy.sdk.hebe
+package io.github.wulkanowy.sdk.hebe.models
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-internal class ApiResponse<T> {
-
+class ApiResponse<T> {
     @SerialName("Envelope")
     var envelope: T? = null
 

@@ -73,7 +73,7 @@ internal class AccountRepository(private val account: AccountService) {
     private suspend fun getPasswordResetUrl(registerBaseUrl: String, domainSuffix: String, symbol: String): Pair<Scrapper.LoginType, String> {
         val url = URL(registerBaseUrl)
         val unlockUrl = when (url.host) {
-            "fakelog.cf" -> STANDARD to "https://cufs.fakelog.cf/Default/AccountManage/UnlockAccount"
+            "fakelog.cf" -> STANDARD to "https://cufs.wulkanowy.net.pl/Default/AccountManage/UnlockAccount"
             "fakelog.tk" -> STANDARD to "https://cufs.fakelog.tk/Default/AccountManage/UnlockAccount"
             "eszkola.opolskie.pl" -> ADFSCards to "https://konta.eszkola.opolskie.pl/maintenance/unlock.aspx"
             "edu.gdansk.pl" -> ADFS to "https://konta.edu.gdansk.pl/maintenance/unlock.aspx"

@@ -40,7 +40,7 @@ class StudentInfo(
     val pupil: Pupil,
 
     @SerialName("SenderEntry")
-    val senderEntry: SenderEntry,
+    val senderEntry: SenderEntry?,
 
     @SerialName("TopLevelPartition")
     val topLevelPartition: String,
@@ -62,7 +62,7 @@ class StudentInfo(
         val name: String,
 
         @SerialName("Patron")
-        val patron: String,
+        val patron: String?,
 
         @SerialName("SchoolTopic")
         val schoolTopic: String,
@@ -263,7 +263,7 @@ class StudentInfo(
         val name: String,
 
         @SerialName("Patron")
-        val patron: String,
+        val patron: String?,
 
         @SerialName("RestURL")
         val restUrl: String,

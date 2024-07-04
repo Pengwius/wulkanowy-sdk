@@ -14,11 +14,11 @@ data class Grade(
     @SerialName("ContentRaw")
     val contentRaw: String,
     @SerialName("Creator")
-    val creator: Creator,
+    val creator: Teacher,
     @SerialName("DateCreated")
-    val dateCreated: DateCreated,
+    val dateCreated: Date,
     @SerialName("DateModify")
-    val dateModify: DateModify,
+    val dateModify: Date,
     // @SerialName("Denominator")
     // val denominator: Any?,
     @SerialName("Id")
@@ -68,57 +68,7 @@ data class Grade(
             @SerialName("Name")
             val name: String,
         )
-
-        @Serializable
-        data class Subject(
-            @SerialName("Id")
-            val id: Int,
-            @SerialName("Key")
-            val key: String,
-            @SerialName("Kod")
-            val kod: String,
-            @SerialName("Name")
-            val name: String,
-            @SerialName("Position")
-            val position: Int,
-        )
     }
-
-    @Serializable
-    data class Creator(
-        @SerialName("DisplayName")
-        val displayName: String,
-        @SerialName("Id")
-        val id: Int,
-        @SerialName("Name")
-        val name: String,
-        @SerialName("Surname")
-        val surname: String,
-    )
-
-    @Serializable
-    data class DateCreated(
-        @SerialName("Date")
-        val date: String,
-        @SerialName("DateDisplay")
-        val dateDisplay: String,
-        @SerialName("Time")
-        val time: String,
-        @SerialName("Timestamp")
-        val timestamp: Long,
-    )
-
-    @Serializable
-    data class DateModify(
-        @SerialName("Date")
-        val date: String,
-        @SerialName("DateDisplay")
-        val dateDisplay: String,
-        @SerialName("Time")
-        val time: String,
-        @SerialName("Timestamp")
-        val timestamp: Long,
-    )
 
     @Serializable
     data class Modifier(

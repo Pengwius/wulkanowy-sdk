@@ -1,9 +1,20 @@
 package io.github.wulkanowy.sdk.hebe
 
+import io.github.wulkanowy.sdk.hebe.models.Address
+import io.github.wulkanowy.sdk.hebe.models.ApiRequest
+import io.github.wulkanowy.sdk.hebe.models.ApiResponse
+import io.github.wulkanowy.sdk.hebe.models.Attendance
+import io.github.wulkanowy.sdk.hebe.models.ChangedLesson
 import io.github.wulkanowy.sdk.hebe.models.Exam
 import io.github.wulkanowy.sdk.hebe.models.Grade
 import io.github.wulkanowy.sdk.hebe.models.GradeAverage
 import io.github.wulkanowy.sdk.hebe.models.GradeSummary
+import io.github.wulkanowy.sdk.hebe.models.Homework
+import io.github.wulkanowy.sdk.hebe.models.Lesson
+import io.github.wulkanowy.sdk.hebe.models.LuckyNumber
+import io.github.wulkanowy.sdk.hebe.models.Message
+import io.github.wulkanowy.sdk.hebe.models.MessageBox
+import io.github.wulkanowy.sdk.hebe.models.MessagePayload
 import io.github.wulkanowy.sdk.hebe.register.RegisterDevice
 import io.github.wulkanowy.sdk.hebe.register.StudentInfo
 import io.github.wulkanowy.sdk.hebe.repository.RepositoryManager
@@ -47,6 +58,12 @@ class Hebe {
         }
 
     var pupilId = -1
+        set(value) {
+            field = value
+            resettableManager.reset()
+        }
+
+    var loginId = -1
         set(value) {
             field = value
             resettableManager.reset()
@@ -147,5 +164,64 @@ class Hebe {
             startDate = startDate,
             endDate = endDate,
         )
+    }
+
+    suspend fun getHomeworks(periodId: Int): List<Homework> {
+        return studentRepository.getHomeworks(
+            pupilId = pupilId,
+            periodId = periodId,
+        )
+    }
+
+    suspend fun getTimetable(dateFrom: LocalDate, dateTo: LocalDate): List<Lesson> {
+        return studentRepository.getTimetable(
+            pupilId = pupilId,
+            dateFrom = dateFrom,
+            dateTo = dateTo,
+        )
+    }
+
+    suspend fun getTimetableChanges(dateFrom: LocalDate, dateTo: LocalDate): List<ChangedLesson> {
+        return studentRepository.getTimetableChanges(
+            pupilId = pupilId,
+            dateFrom = dateFrom,
+            dateTo = dateTo,
+        )
+    }
+
+    suspend fun getAttendance(dateFrom: LocalDate, dateTo: LocalDate): List<Attendance> {
+        return studentRepository.getAttendance(
+            pupilId = pupilId,
+            dateFrom = dateFrom,
+            dateTo = dateTo,
+        )
+    }
+
+    suspend fun getLuckyNumber(day: LocalDate): LuckyNumber {
+        return studentRepository.getLuckyNumber(
+            constituentId = schoolId,
+            day = day,
+        )
+    }
+
+    suspend fun getMessageBoxes(): List<MessageBox> {
+        return studentRepository.getMessageBoxes()
+    }
+
+    suspend fun getAddressBook(messageBox: String): List<Address> {
+        return studentRepository.getAddressBook(
+            messageBox = messageBox,
+        )
+    }
+
+    suspend fun getMessages(messageBox: String, folder: Int): List<Message> {
+        return studentRepository.getMessages(
+            messageBox = messageBox,
+            folder = folder,
+        )
+    }
+
+    suspend fun sendMessage(payload: ApiRequest<MessagePayload>): MessagePayload {
+        return studentRepository.sendMessage(payload)
     }
 }

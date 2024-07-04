@@ -54,6 +54,7 @@ hs_err_pid*
 .idea/jarRepositories.xml
 .gradle
 build/
+bin/
 out/
 
 # Ignore Gradle GUI config

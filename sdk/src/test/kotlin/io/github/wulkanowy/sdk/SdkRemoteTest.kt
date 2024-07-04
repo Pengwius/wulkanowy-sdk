@@ -24,7 +24,7 @@ class SdkRemoteTest {
     fun fullGradesExample() = runTest {
         val userEmail = "jan@fakelog.cf"
         val userPassword = "jan123"
-        val host = "https://fakelog.cf/"
+        val host = "https://wulkanowy.net.pl/"
 
         val sdk = Sdk()
         val registerUser: RegisterUser = sdk.getUserSubjectsFromScrapper(

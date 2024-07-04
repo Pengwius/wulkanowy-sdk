@@ -34,7 +34,7 @@ val sdk = Sdk()
 val registerUser: RegisterUser = sdk.getUserSubjectsFromScrapper(
     email = "jan@fakelog.cf",
     password = "jan123",
-    scrapperBaseUrl = "https://fakelog.cf/",
+    scrapperBaseUrl = "https://wulkanowy.net.pl/",
     symbol = "powiatwulkanowy",
 )
 ```
@@ -77,7 +77,7 @@ val sdk = Sdk()
 val registerUser: RegisterUser = sdk.getStudentsHybrid(
     email = "jan@fakelog.cf",
     password = "jan123",
-    scrapperBaseUrl = "https://fakelog.cf/",
+    scrapperBaseUrl = "https://wulkanowy.net.pl/",
     startSymbol = "powiatwulkanowy",
     firebaseToken = null,
 )

@@ -1,4 +1,4 @@
-package io.github.wulkanowy.sdk.hebe
+package io.github.wulkanowy.sdk.hebe.models
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -8,8 +8,7 @@ import java.time.format.DateTimeFormatter.ofPattern
 import java.util.UUID
 
 @Serializable
-internal data class ApiRequest<T>(
-
+data class ApiRequest<T>(
     @SerialName("API")
     val apiVersion: Int = 1,
 

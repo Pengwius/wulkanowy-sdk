@@ -1,5 +1,7 @@
 package io.github.wulkanowy.sdk.hebe
 
+import io.github.wulkanowy.sdk.hebe.models.ApiResponse
+
 internal fun <T> ApiResponse<T>.getEnvelopeOrThrowError(): T? {
     if (envelope == null) {
         when (status.code) {
