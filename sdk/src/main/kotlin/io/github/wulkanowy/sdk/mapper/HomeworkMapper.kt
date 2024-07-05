@@ -20,7 +20,7 @@ internal fun List<ScrapperHomework>.mapHomework() = map {
     )
 }
 
-@JvmName("heveScrapperHomework")
+@JvmName("mapHebeHomework")
 internal fun List<HebeHomework>.mapHomework() = map {
     Homework(
         date = it.dateCreated.date,
