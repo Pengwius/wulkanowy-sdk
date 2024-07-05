@@ -76,7 +76,7 @@ internal fun Triple<List<HebeGrade>, List<HebeGradeSummary>, List<HebeGradeAvera
             description = grade.column.name,
             color = grade.column.color.toString(16).uppercase(),
             teacher = "${grade.creator.name} ${grade.creator.surname}",
-            date = LocalDate.parse(grade.dateCreated.date, DateTimeFormatter.ofPattern("yyyy-MM-dd")),
+            date = LocalDate.parse(grade.dateCreated.date.toString(), DateTimeFormatter.ofPattern("yyyy-MM-dd")),
         )
     },
     summary = second.map { summary ->
