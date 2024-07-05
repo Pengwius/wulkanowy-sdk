@@ -10,10 +10,13 @@ import io.github.wulkanowy.sdk.scrapper.attendance.AttendanceCategory.EXCUSED_LA
 import io.github.wulkanowy.sdk.scrapper.attendance.AttendanceCategory.EXEMPTION
 import io.github.wulkanowy.sdk.scrapper.attendance.AttendanceCategory.PRESENCE
 import io.github.wulkanowy.sdk.scrapper.attendance.AttendanceCategory.UNEXCUSED_LATENESS
+import java.time.LocalDate
 import io.github.wulkanowy.sdk.scrapper.attendance.Absent as ScrapperAbsent
 import io.github.wulkanowy.sdk.scrapper.attendance.Attendance as ScrapperAttendance
 import io.github.wulkanowy.sdk.scrapper.attendance.AttendanceSummary as ScrapperAttendanceSummary
+import io.github.wulkanowy.sdk.hebe.models.Attendance as HebeAttendance
 
+@JvmName("mapScrapperAttendance")
 internal fun List<ScrapperAttendance>.mapAttendance() = map {
     Attendance(
         number = it.number,
@@ -33,6 +36,7 @@ internal fun List<ScrapperAttendance>.mapAttendance() = map {
     )
 }
 
+@JvmName("mapScrapperAttendanceSummary")
 internal fun List<ScrapperAttendanceSummary>.mapAttendanceSummary() = map {
     AttendanceSummary(
         month = it.month,
@@ -43,6 +47,26 @@ internal fun List<ScrapperAttendanceSummary>.mapAttendanceSummary() = map {
         lateness = it.lateness,
         latenessExcused = it.latenessExcused,
         exemption = it.exemption,
+    )
+}
+
+@JvmName("mapHebeAttendance")
+internal fun List<HebeAttendance>.mapAttendance() = map {
+    Attendance(
+        number = it.lessonNumber ?: 0,
+        name = it.presenceType?.name ?: "Nieznany",
+        subject = it.subject?.name ?: "Nieznany",
+        date = it.date?.date ?: LocalDate.of(2137, 6, 9),
+        timeId = it.time?.id ?: 0,
+        categoryId = it.presenceType?.id ?: 0,
+        deleted = false,
+        excuseStatus = null,
+        excusable = false,
+        absence = it.presenceType?.absence ?: false,
+        excused = false,
+        exemption = it.presenceType?.exemption ?: false,
+        lateness = it.presenceType?.late ?: false,
+        presence = it.presenceType?.presence ?: false,
     )
 }
 

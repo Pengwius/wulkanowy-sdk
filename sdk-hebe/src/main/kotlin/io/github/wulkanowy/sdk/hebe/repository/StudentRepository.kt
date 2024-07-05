@@ -47,9 +47,9 @@ internal class StudentRepository(private val studentService: StudentService) {
         }
     }
 
-    suspend fun getHomeworks(pupilId: Int, periodId: Int): List<Homework> {
+    suspend fun getHomeworks(pupilId: Int, dateFrom: LocalDate, dateTo: LocalDate): List<Homework> {
         return studentService.getHomeworks(
-            createQueryMap(pupilId = pupilId, periodId = periodId)
+            createQueryMap(pupilId = pupilId, dateFrom = dateFrom, dateTo = dateTo)
         ).getEnvelopeOrThrowError().orEmpty()
     }
 

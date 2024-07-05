@@ -425,8 +425,8 @@ class Sdk {
 
     suspend fun getAttendance(startDate: LocalDate, endDate: LocalDate): List<Attendance> = withContext(Dispatchers.IO) {
         when (mode) {
-            Mode.HYBRID, Mode.SCRAPPER -> scrapper.getAttendance(startDate, endDate).mapAttendance()
-            Mode.HEBE -> throw NotImplementedError("Not available in HEBE mode")
+            Mode.SCRAPPER -> scrapper.getAttendance(startDate, endDate).mapAttendance()
+            Mode.HYBRID, Mode.HEBE -> hebe.getAttendance(startDate, endDate).mapAttendance()
         }
     }
 
@@ -453,8 +453,8 @@ class Sdk {
 
     suspend fun getExams(start: LocalDate, end: LocalDate): List<Exam> = withContext(Dispatchers.IO) {
         when (mode) {
-            Mode.HYBRID, Mode.SCRAPPER -> scrapper.getExams(start, end).mapExams()
-            Mode.HEBE -> hebe.getExams(start, end).mapExams()
+            Mode.SCRAPPER -> scrapper.getExams(start, end).mapExams()
+            Mode.HYBRID, Mode.HEBE -> hebe.getExams(start, end).mapExams()
         }
     }
 
@@ -492,8 +492,8 @@ class Sdk {
 
     suspend fun getHomework(start: LocalDate, end: LocalDate): List<Homework> = withContext(Dispatchers.IO) {
         when (mode) {
-            Mode.HYBRID, Mode.SCRAPPER -> scrapper.getHomework(start, end).mapHomework()
-            Mode.HEBE -> throw NotImplementedError("Not available in HEBE mode")
+            Mode.SCRAPPER -> scrapper.getHomework(start, end).mapHomework()
+            Mode.HYBRID, Mode.HEBE -> hebe.getHomeworks(start, end).mapHomework()
         }
     }
 

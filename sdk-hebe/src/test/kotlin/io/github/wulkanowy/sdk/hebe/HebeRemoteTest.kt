@@ -82,7 +82,7 @@ class HebeRemoteTest {
 
     @Test
     fun `get homeworks`() = runTest {
-        val homeworks = hebe.getHomeworks(2137)
+        val homeworks = hebe.getHomeworks(LocalDate.of(2023, 4, 1), LocalDate.of(2023, 5, 1))
         assertTrue(homeworks.isNotEmpty())
     }
 

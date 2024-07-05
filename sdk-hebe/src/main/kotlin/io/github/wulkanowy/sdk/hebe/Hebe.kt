@@ -166,10 +166,11 @@ class Hebe {
         )
     }
 
-    suspend fun getHomeworks(periodId: Int): List<Homework> {
+    suspend fun getHomeworks(dateFrom: LocalDate, dateTo: LocalDate): List<Homework> {
         return studentRepository.getHomeworks(
             pupilId = pupilId,
-            periodId = periodId,
+            dateFrom = dateFrom,
+            dateTo = dateTo,
         )
     }
 
