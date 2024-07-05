@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.github.wulkanowy.signer:hebe-jvm:0.1.0-SNAPSHOT'
+    implementation 'com.github.Pengwius.uonet-request-signer:hebe-jvm:-SNAPSHOT'
 
     implementation libs.retrofit.core
     implementation libs.retrofit.scalars
