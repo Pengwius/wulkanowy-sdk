@@ -624,6 +624,13 @@ class Sdk {
         }
     }
 
+    suspend fun markMessageRead(messageKey: String) = withContext(Dispatchers.IO) {
+        when (mode) {
+            Mode.HYBRID, Mode.SCRAPPER -> scrapper.markMessageRead(messageKey)
+            Mode.HEBE -> throw NotImplementedError("Not available in HEBE mode")
+        }
+    }
+
     suspend fun sendMessage(subject: String, content: String, recipients: List<Recipient>, mailboxId: String) = withContext(Dispatchers.IO) {
         when (mode) {
             Mode.HYBRID, Mode.SCRAPPER -> scrapper.sendMessage(subject, content, recipients.map { it.mailboxGlobalKey }, mailboxId)
