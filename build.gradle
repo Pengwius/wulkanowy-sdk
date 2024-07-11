@@ -19,7 +19,7 @@ ext {
 }
 
 version = "2.7.0"
-group = "io.github.wulkanowy"
+group = "io.github.freewulkanowy"
 
 nexusPublishing {
     repositories {
@@ -154,7 +154,7 @@ subprojects {
         testLogging.showStandardStreams = false
     }
 
-    group = "io.github.wulkanowy.sdk"
+    group = "io.github.freewulkanowy.sdk"
 }
 
 dependencies {

@@ -1,0 +1,10 @@
+package io.github.freewulkanowy.sdk.scrapper.attendance
+
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+internal data class AttendanceSummaryRequest(
+    @SerialName("idPrzedmiot")
+    val id: Int?,
+)

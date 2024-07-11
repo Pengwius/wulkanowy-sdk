@@ -1,0 +1,9 @@
+package io.github.freewulkanowy.sdk.scrapper.register
+
+import pl.droidsonroids.jspoon.annotation.Selector
+
+internal class UnlockAccountResponse {
+
+    @Selector(".g-recaptcha", attr = "data-sitekey")
+    lateinit var recaptchaSiteKey: String
+}

@@ -1,7 +1,7 @@
-public final class io/github/wulkanowy/sdk/hebe/Hebe {
+public final class io/github/freewulkanowy/sdk/hebe/Hebe {
 	public fun <init> ()V
 	public final fun addInterceptor (Lokhttp3/Interceptor;Z)V
-	public static synthetic fun addInterceptor$default (Lio/github/wulkanowy/sdk/hebe/Hebe;Lokhttp3/Interceptor;ZILjava/lang/Object;)V
+	public static synthetic fun addInterceptor$default (Lio/github/freewulkanowy/sdk/hebe/Hebe;Lokhttp3/Interceptor;ZILjava/lang/Object;)V
 	public final fun getBaseUrl ()Ljava/lang/String;
 	public final fun getDeviceModel ()Ljava/lang/String;
 	public final fun getExams (Ljava/time/LocalDate;Ljava/time/LocalDate;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -15,7 +15,7 @@ public final class io/github/wulkanowy/sdk/hebe/Hebe {
 	public final fun getSchoolId ()Ljava/lang/String;
 	public final fun getStudents (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun register (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun register$default (Lio/github/wulkanowy/sdk/hebe/Hebe;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun register$default (Lio/github/freewulkanowy/sdk/hebe/Hebe;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun setBaseUrl (Ljava/lang/String;)V
 	public final fun setDeviceModel (Ljava/lang/String;)V
 	public final fun setKeyId (Ljava/lang/String;)V
@@ -25,80 +25,80 @@ public final class io/github/wulkanowy/sdk/hebe/Hebe {
 	public final fun setSchoolId (Ljava/lang/String;)V
 }
 
-public final class io/github/wulkanowy/sdk/hebe/exception/InvalidPinException : java/io/IOException {
+public final class io/github/freewulkanowy/sdk/hebe/exception/InvalidPinException : java/io/IOException {
 	public fun <init> ()V
 }
 
-public final class io/github/wulkanowy/sdk/hebe/exception/InvalidSymbolException : java/io/IOException {
+public final class io/github/freewulkanowy/sdk/hebe/exception/InvalidSymbolException : java/io/IOException {
 	public fun <init> ()V
 }
 
-public final class io/github/wulkanowy/sdk/hebe/exception/InvalidTokenException : java/io/IOException {
+public final class io/github/freewulkanowy/sdk/hebe/exception/InvalidTokenException : java/io/IOException {
 	public fun <init> (Ljava/lang/String;)V
 }
 
-public final class io/github/wulkanowy/sdk/hebe/exception/TokenDeadException : java/io/IOException {
+public final class io/github/freewulkanowy/sdk/hebe/exception/TokenDeadException : java/io/IOException {
 	public fun <init> ()V
 }
 
-public final class io/github/wulkanowy/sdk/hebe/exception/UnknownTokenException : java/io/IOException {
+public final class io/github/freewulkanowy/sdk/hebe/exception/UnknownTokenException : java/io/IOException {
 	public fun <init> (Ljava/lang/String;)V
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Exam$Companion;
-	public fun <init> (Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;ILjava/lang/String;ILio/github/wulkanowy/sdk/hebe/models/Exam$Subject;Ljava/lang/String;)V
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Exam$Companion;
+	public fun <init> (Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;ILjava/lang/String;ILio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component10 ()Ljava/lang/String;
-	public final fun component2 ()Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;
-	public final fun component3 ()Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;
-	public final fun component4 ()Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;
-	public final fun component5 ()Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;
+	public final fun component2 ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;
+	public final fun component3 ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;
+	public final fun component4 ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;
+	public final fun component5 ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;
 	public final fun component6 ()I
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()I
-	public final fun component9 ()Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject;
-	public final fun copy (Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;ILjava/lang/String;ILio/github/wulkanowy/sdk/hebe/models/Exam$Subject;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/models/Exam;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Exam;Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;ILjava/lang/String;ILio/github/wulkanowy/sdk/hebe/models/Exam$Subject;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Exam;
+	public final fun component9 ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;
+	public final fun copy (Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;ILjava/lang/String;ILio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/models/Exam;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Exam;Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;ILjava/lang/String;ILio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Exam;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getContent ()Ljava/lang/String;
-	public final fun getCreator ()Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;
-	public final fun getDateCreated ()Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;
-	public final fun getDateModify ()Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;
-	public final fun getDeadline ()Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;
+	public final fun getCreator ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;
+	public final fun getDateCreated ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;
+	public final fun getDateModify ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;
+	public final fun getDeadline ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;
 	public final fun getId ()I
 	public final fun getKey ()Ljava/lang/String;
 	public final fun getPupilId ()I
-	public final fun getSubject ()Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject;
+	public final fun getSubject ()Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;
 	public final fun getType ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Exam$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Exam$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Exam;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Exam;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Exam;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Exam;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Creator {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Creator {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator$Companion;
 	public fun <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()I
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;
+	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDisplayName ()Ljava/lang/String;
 	public final fun getId ()I
@@ -108,30 +108,30 @@ public final class io/github/wulkanowy/sdk/hebe/models/Exam$Creator {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Creator$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Creator$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Exam$Creator;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Creator;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Creator$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Creator$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$DateCreated {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated$Companion;
 	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()J
-	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;
+	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/time/LocalDate;
 	public final fun getDateDisplay ()Ljava/lang/String;
@@ -141,30 +141,30 @@ public final class io/github/wulkanowy/sdk/hebe/models/Exam$DateCreated {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$DateCreated$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Exam$DateCreated;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$DateCreated$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$DateCreated$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$DateModify {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$DateModify {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify$Companion;
 	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()J
-	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;
+	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/time/LocalDate;
 	public final fun getDateDisplay ()Ljava/lang/String;
@@ -174,30 +174,30 @@ public final class io/github/wulkanowy/sdk/hebe/models/Exam$DateModify {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$DateModify$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$DateModify$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Exam$DateModify;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Exam$DateModify;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$DateModify$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$DateModify$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Deadline {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Deadline {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline$Companion;
 	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()J
-	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;
+	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;J)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/time/LocalDate;
 	public final fun getDateDisplay ()Ljava/lang/String;
@@ -207,31 +207,31 @@ public final class io/github/wulkanowy/sdk/hebe/models/Exam$Deadline {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Deadline$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Deadline$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Exam$Deadline;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Deadline;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Deadline$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Deadline$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Subject {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Subject {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject$Companion;
 	public fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()I
-	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject;
+	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getId ()I
 	public final fun getKey ()Ljava/lang/String;
@@ -242,73 +242,73 @@ public final class io/github/wulkanowy/sdk/hebe/models/Exam$Subject {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Subject$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Subject$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Exam$Subject;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Exam$Subject;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Exam$Subject$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Exam$Subject$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Grade$Companion;
-	public fun <init> (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;ILjava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;ILjava/lang/Double;)V
-	public synthetic fun <init> (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;ILjava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;ILjava/lang/Double;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun component1 ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;
-	public final fun component10 ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Grade$Companion;
+	public fun <init> (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;ILjava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;ILjava/lang/Double;)V
+	public synthetic fun <init> (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;ILjava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;ILjava/lang/Double;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;
+	public final fun component10 ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;
 	public final fun component11 ()I
 	public final fun component12 ()Ljava/lang/Double;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun component5 ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;
-	public final fun component6 ()Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;
-	public final fun component7 ()Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;
+	public final fun component5 ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;
+	public final fun component6 ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;
+	public final fun component7 ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;
 	public final fun component8 ()I
 	public final fun component9 ()Ljava/lang/String;
-	public final fun copy (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;ILjava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;ILjava/lang/Double;)Lio/github/wulkanowy/sdk/hebe/models/Grade;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Grade;Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;ILjava/lang/String;Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;ILjava/lang/Double;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Grade;
+	public final fun copy (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;ILjava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;ILjava/lang/Double;)Lio/github/freewulkanowy/sdk/hebe/models/Grade;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Grade;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;ILjava/lang/String;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;ILjava/lang/Double;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Grade;
 	public fun equals (Ljava/lang/Object;)Z
-	public final fun getColumn ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;
+	public final fun getColumn ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;
 	public final fun getComment ()Ljava/lang/String;
 	public final fun getContent ()Ljava/lang/String;
 	public final fun getContentRaw ()Ljava/lang/String;
-	public final fun getCreator ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;
-	public final fun getDateCreated ()Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;
-	public final fun getDateModify ()Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;
+	public final fun getCreator ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;
+	public final fun getDateCreated ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;
+	public final fun getDateModify ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;
 	public final fun getId ()I
 	public final fun getKey ()Ljava/lang/String;
-	public final fun getModifier ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;
+	public final fun getModifier ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;
 	public final fun getPupilId ()I
 	public final fun getValue ()Ljava/lang/Double;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Grade$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Grade$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Grade;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Grade;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Grade;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Grade;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Companion;
-	public fun <init> (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;IILio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;D)V
-	public synthetic fun <init> (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;IILio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;DILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun component1 ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;
-	public final fun component10 ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Companion;
+	public fun <init> (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;IILio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;D)V
+	public synthetic fun <init> (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;IILio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;DILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;
+	public final fun component10 ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;
 	public final fun component11 ()D
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()I
@@ -318,10 +318,10 @@ public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column {
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()I
 	public final fun component9 ()I
-	public final fun copy (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;IILio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;D)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;IILio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;DILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;
+	public final fun copy (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;IILio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;D)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;IILio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;DILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;
 	public fun equals (Ljava/lang/Object;)Z
-	public final fun getCategory ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;
+	public final fun getCategory ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;
 	public final fun getCode ()Ljava/lang/String;
 	public final fun getColor ()I
 	public final fun getGroup ()Ljava/lang/String;
@@ -330,31 +330,31 @@ public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column {
 	public final fun getName ()Ljava/lang/String;
 	public final fun getNumber ()I
 	public final fun getPeriodId ()I
-	public final fun getSubject ()Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;
+	public final fun getSubject ()Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;
 	public final fun getWeight ()D
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Grade$Column;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Category {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category$Companion;
 	public fun <init> (Ljava/lang/String;ILjava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()I
 	public final fun component3 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;ILjava/lang/String;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;
+	public final fun copy (Ljava/lang/String;ILjava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;Ljava/lang/String;ILjava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getCode ()Ljava/lang/String;
 	public final fun getId ()I
@@ -363,35 +363,35 @@ public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Category {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Category$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Category;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Category$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column$Category$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject$Companion;
 	public fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()I
-	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;
+	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getId ()I
 	public final fun getKey ()Ljava/lang/String;
@@ -402,34 +402,34 @@ public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Column$Subject$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Column$Subject$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Creator {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Creator {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator$Companion;
 	public fun <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()I
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;
+	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDisplayName ()Ljava/lang/String;
 	public final fun getId ()I
@@ -439,30 +439,30 @@ public final class io/github/wulkanowy/sdk/hebe/models/Grade$Creator {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Creator$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Creator$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Grade$Creator;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Creator;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Creator$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Creator$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$DateCreated {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()J
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/lang/String;
 	public final fun getDateDisplay ()Ljava/lang/String;
@@ -472,30 +472,30 @@ public final class io/github/wulkanowy/sdk/hebe/models/Grade$DateCreated {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$DateCreated$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateCreated;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$DateCreated$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$DateCreated$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$DateModify {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$DateModify {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()J
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/lang/String;
 	public final fun getDateDisplay ()Ljava/lang/String;
@@ -505,30 +505,30 @@ public final class io/github/wulkanowy/sdk/hebe/models/Grade$DateModify {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$DateModify$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$DateModify$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Grade$DateModify;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Grade$DateModify;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$DateModify$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$DateModify$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Modifier {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Modifier {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier$Companion;
 	public fun <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()I
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;
+	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDisplayName ()Ljava/lang/String;
 	public final fun getId ()I
@@ -538,66 +538,66 @@ public final class io/github/wulkanowy/sdk/hebe/models/Grade$Modifier {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Modifier$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Modifier$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/Grade$Modifier;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/Grade$Modifier;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/Grade$Modifier$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/Grade$Modifier$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeAverage {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Companion;
-	public fun <init> (Ljava/lang/String;IIILio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;)V
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeAverage {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Companion;
+	public fun <init> (Ljava/lang/String;IIILio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()I
 	public final fun component3 ()I
 	public final fun component4 ()I
-	public final fun component5 ()Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;
-	public final fun copy (Ljava/lang/String;IIILio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;)Lio/github/wulkanowy/sdk/hebe/models/GradeAverage;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/GradeAverage;Ljava/lang/String;IIILio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/GradeAverage;
+	public final fun component5 ()Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;
+	public final fun copy (Ljava/lang/String;IIILio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;)Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage;Ljava/lang/String;IIILio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAverage ()Ljava/lang/String;
 	public final fun getId ()I
 	public final fun getPeriodId ()I
 	public final fun getPupilId ()I
-	public final fun getSubject ()Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;
+	public final fun getSubject ()Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeAverage$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeAverage$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/GradeAverage;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/GradeAverage;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeAverage$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeAverage$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject$Companion;
 	public fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()I
-	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;
+	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getId ()I
 	public final fun getKey ()Ljava/lang/String;
@@ -608,70 +608,70 @@ public final class io/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeAverage$Subject$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeAverage$Subject$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Companion;
-	public fun <init> (Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;IIILio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;)V
-	public synthetic fun <init> (Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;IIILio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public final fun component1 ()Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Companion;
+	public fun <init> (Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;IIILio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;)V
+	public synthetic fun <init> (Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;IIILio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()I
 	public final fun component5 ()I
 	public final fun component6 ()I
-	public final fun component7 ()Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;
-	public final fun copy (Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;IIILio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/GradeSummary;Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;IIILio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary;
+	public final fun component7 ()Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;
+	public final fun copy (Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;IIILio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary;Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;IIILio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary;
 	public fun equals (Ljava/lang/Object;)Z
-	public final fun getDateModify ()Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;
+	public final fun getDateModify ()Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;
 	public final fun getEntry1 ()Ljava/lang/String;
 	public final fun getEntry2 ()Ljava/lang/String;
 	public final fun getId ()I
 	public final fun getPeriodId ()I
 	public final fun getPupilId ()I
-	public final fun getSubject ()Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;
+	public final fun getSubject ()Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/GradeSummary;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()J
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/lang/String;
 	public final fun getDateDisplay ()Ljava/lang/String;
@@ -681,31 +681,31 @@ public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$DateModify$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary$DateModify$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject$Companion;
 	public fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()I
-	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;
+	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getId ()I
 	public final fun getKey ()Ljava/lang/String;
@@ -716,22 +716,22 @@ public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/models/GradeSummary$Subject$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/models/GradeSummary$Subject$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/RegisterDevice {
+public final class io/github/freewulkanowy/sdk/hebe/register/RegisterDevice {
 	public fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
@@ -739,8 +739,8 @@ public final class io/github/wulkanowy/sdk/hebe/register/RegisterDevice {
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/lang/String;
-	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/register/RegisterDevice;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/RegisterDevice;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/RegisterDevice;
+	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/register/RegisterDevice;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/RegisterDevice;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/RegisterDevice;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getCertificateHash ()Ljava/lang/String;
 	public final fun getLoginId ()I
@@ -752,42 +752,42 @@ public final class io/github/wulkanowy/sdk/hebe/register/RegisterDevice {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Companion;
-	public fun <init> (Ljava/util/List;Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;Ljava/util/List;ZLjava/lang/String;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login;Ljava/lang/String;Ljava/util/List;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;Ljava/lang/String;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit;)V
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Companion;
+	public fun <init> (Ljava/util/List;Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;Ljava/util/List;ZLjava/lang/String;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login;Ljava/lang/String;Ljava/util/List;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;Ljava/lang/String;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit;)V
 	public final fun getCapabilities ()Ljava/util/List;
 	public final fun getClassDisplay ()Ljava/lang/String;
-	public final fun getConstituentUnit ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;
+	public final fun getConstituentUnit ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;
 	public final fun getEducators ()Ljava/util/List;
 	public final fun getFullSync ()Z
 	public final fun getInfoDisplay ()Ljava/lang/String;
-	public final fun getJournal ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal;
-	public final fun getLogin ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login;
+	public final fun getJournal ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal;
+	public final fun getLogin ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login;
 	public final fun getPartition ()Ljava/lang/String;
 	public final fun getPeriods ()Ljava/util/List;
-	public final fun getPupil ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil;
-	public final fun getSenderEntry ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;
+	public final fun getPupil ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil;
+	public final fun getSenderEntry ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;
 	public final fun getTopLevelPartition ()Ljava/lang/String;
-	public final fun getUnit ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit;
+	public final fun getUnit ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit$Companion;
 	public fun <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()I
@@ -795,8 +795,8 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Constituent
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;
+	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAddress ()Ljava/lang/String;
 	public final fun getId ()I
@@ -808,23 +808,23 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Constituent
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$ConstituentUnit$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -832,8 +832,8 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator {
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/util/List;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/util/List;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/util/List;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getId ()Ljava/lang/String;
 	public final fun getInitials ()Ljava/lang/String;
@@ -845,23 +845,23 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -874,8 +874,8 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Ro
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()I
 	public final fun component9 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAddress ()Ljava/lang/String;
 	public final fun getAddressHash ()Ljava/lang/String;
@@ -891,54 +891,54 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Ro
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Educator$Role$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Educator$Role$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal$Companion;
-	public fun <init> (ILio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)V
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal$Companion;
+	public fun <init> (ILio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)V
 	public final fun component1 ()I
-	public final fun component2 ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
-	public final fun component3 ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
-	public final fun copy (ILio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal;ILio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal;
+	public final fun component2 ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun component3 ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun copy (ILio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal;ILio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getId ()I
-	public final fun getYearEnd ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
-	public final fun getYearStart ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun getYearEnd ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun getYearStart ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Journal$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Journal$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Login {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -947,8 +947,8 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Login {
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDisplayName ()Ljava/lang/String;
 	public final fun getFirstName ()Ljava/lang/String;
@@ -961,69 +961,69 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Login {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Login$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Login;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Login$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Login$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Period {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Period$Companion;
-	public fun <init> (ZLio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;IZIILio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)V
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period$Companion;
+	public fun <init> (ZLio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;IZIILio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)V
 	public final fun component1 ()Z
-	public final fun component2 ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun component2 ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
 	public final fun component3 ()I
 	public final fun component4 ()Z
 	public final fun component5 ()I
 	public final fun component6 ()I
-	public final fun component7 ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
-	public final fun copy (ZLio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;IZIILio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Period;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Period;ZLio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;IZIILio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Period;
+	public final fun component7 ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun copy (ZLio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;IZIILio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period;ZLio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;IZIILio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getCurrent ()Z
-	public final fun getEnd ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun getEnd ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
 	public final fun getId ()I
 	public final fun getLast ()Z
 	public final fun getLevel ()I
 	public final fun getNumber ()I
-	public final fun getStart ()Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun getStart ()Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Period$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Period$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Period;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Period;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Period$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Period$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()J
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/lang/String;
 	public final fun getDateDisplay ()Ljava/lang/String;
@@ -1033,23 +1033,23 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate 
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$PeriodDate$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$PeriodDate$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil$Companion;
 	public fun <init> (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 	public synthetic fun <init> (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()I
@@ -1059,8 +1059,8 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil {
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Z
-	public final fun copy (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil;
+	public final fun copy (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getFirstName ()Ljava/lang/String;
 	public final fun getId ()I
@@ -1073,30 +1073,30 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Pupil$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Pupil$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()I
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAddress ()Ljava/lang/String;
 	public final fun getAddressHash ()Ljava/lang/String;
@@ -1106,23 +1106,23 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$SenderEntry$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$SenderEntry$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit {
-	public static final field Companion Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit$Companion;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit {
+	public static final field Companion Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit$Companion;
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -1132,8 +1132,8 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit {
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAddress ()Ljava/lang/String;
 	public final fun getDisplayName ()Ljava/lang/String;
@@ -1147,18 +1147,18 @@ public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit$$serializer;
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit$$serializer;
 	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
-	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit;)V
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lio/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit;)V
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
 }
 
-public final class io/github/wulkanowy/sdk/hebe/register/StudentInfo$Unit$Companion {
+public final class io/github/freewulkanowy/sdk/hebe/register/StudentInfo$Unit$Companion {
 	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 

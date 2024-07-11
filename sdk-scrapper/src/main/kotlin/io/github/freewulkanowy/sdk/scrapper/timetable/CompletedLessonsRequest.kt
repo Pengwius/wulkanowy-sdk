@@ -1,0 +1,17 @@
+package io.github.freewulkanowy.sdk.scrapper.timetable
+
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+internal class CompletedLessonsRequest(
+
+    @SerialName("poczatek")
+    val startDate: String,
+
+    @SerialName("koniec")
+    val endDate: String,
+
+    @SerialName("idPrzedmiot")
+    val subject: Int = -1,
+)

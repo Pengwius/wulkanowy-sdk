@@ -28,7 +28,7 @@ Opis parametrów:
     Jeśli używasz innej odmiany niż `vulcan.net.pl` to zawsze podawaj konkretny symbol, inaczej SDK prawdopodobnie niczego nie znajdzie.  
 
 ```kotlin
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 
 val sdk = Sdk()
 val registerUser: RegisterUser = sdk.getUserSubjectsFromScrapper(
@@ -53,7 +53,7 @@ By zdobyć token, pin i symbol musisz ręcznie [zarejestrować urządzenie](http
 `FirebaseToken` jest opcjonalnym parametrem, gdzie można przekazać... firebase token, używany do wysyłania powiadomień.
 
 ```kotlin
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 
 val sdk = Sdk()
 val registerUser: RegisterUser = sdk.getStudentsFromHebe(
@@ -71,7 +71,7 @@ Tryb hybrydowy to specjalny tryb, który pod spodem używa dwóch powyższych me
 Z tego powodu nie ma potrzeby ręcznego przekazywania tokenu i pinu, bo SDK zdobędzie je samodzielnie.
 
 ```kotlin
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 
 val sdk = Sdk()
 val registerUser: RegisterUser = sdk.getStudentsHybrid(

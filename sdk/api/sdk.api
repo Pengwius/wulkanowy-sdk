@@ -1,24 +1,24 @@
-public final class io/github/wulkanowy/sdk/Sdk {
+public final class io/github/freewulkanowy/sdk/Sdk {
 	public fun <init> ()V
 	public final fun addInterceptor (Lokhttp3/Interceptor;Z)V
-	public static synthetic fun addInterceptor$default (Lio/github/wulkanowy/sdk/Sdk;Lokhttp3/Interceptor;ZILjava/lang/Object;)V
+	public static synthetic fun addInterceptor$default (Lio/github/freewulkanowy/sdk/Sdk;Lokhttp3/Interceptor;ZILjava/lang/Object;)V
 	public final fun authorizePermission (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun deleteMessages (Ljava/util/List;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun deleteMessages$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/util/List;ZLkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun deleteMessages$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/util/List;ZLkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun excuseForAbsence (Ljava/util/List;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun excuseForAbsence$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/util/List;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun excuseForAbsence$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/util/List;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getAndroidVersion ()Ljava/lang/String;
 	public final fun getAttendance (Ljava/time/LocalDate;Ljava/time/LocalDate;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getAttendanceSummary (Ljava/lang/Integer;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getAttendanceSummary$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/Integer;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getAttendanceSummary$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/Integer;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getBuildTag ()Ljava/lang/String;
 	public final fun getClassId ()I
 	public final fun getCompletedLessons (Ljava/time/LocalDate;Ljava/time/LocalDate;ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getCompletedLessons$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/time/LocalDate;Ljava/time/LocalDate;ILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getCompletedLessons$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/time/LocalDate;Ljava/time/LocalDate;ILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getConferences (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getCurrentStudent (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getDeletedMessages (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getDeletedMessages$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getDeletedMessages$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getDiaryId ()I
 	public final fun getDirectorInformation (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getDomainSuffix ()Ljava/lang/String;
@@ -42,24 +42,24 @@ public final class io/github/wulkanowy/sdk/Sdk {
 	public final fun getLastHomework (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getLastStudentLessons (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getLogLevel ()Lokhttp3/logging/HttpLoggingInterceptor$Level;
-	public final fun getLoginType ()Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
+	public final fun getLoginType ()Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
 	public final fun getLuckyNumber (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getLuckyNumber$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getLuckyNumber$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getMailboxes (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getMenu (Ljava/time/LocalDate;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getMessageDetails (Ljava/lang/String;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getMessageDetails$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/String;ZLkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getMessageDetails$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/String;ZLkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getMessageReplayDetails (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public final fun getMessages (Lio/github/wulkanowy/sdk/pojo/Folder;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getMessages$default (Lio/github/wulkanowy/sdk/Sdk;Lio/github/wulkanowy/sdk/pojo/Folder;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun getMessages (Lio/github/freewulkanowy/sdk/pojo/Folder;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun getMessages$default (Lio/github/freewulkanowy/sdk/Sdk;Lio/github/freewulkanowy/sdk/pojo/Folder;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getMobileBaseUrl ()Ljava/lang/String;
-	public final fun getMode ()Lio/github/wulkanowy/sdk/Sdk$Mode;
+	public final fun getMode ()Lio/github/freewulkanowy/sdk/Sdk$Mode;
 	public final fun getNotes (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getPassword ()Ljava/lang/String;
 	public final fun getPasswordResetCaptchaCode (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getPrivatePem ()Ljava/lang/String;
 	public final fun getReceivedMessages (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getReceivedMessages$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getReceivedMessages$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getRecipients (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getRegisteredDevices (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getResponseMapping ()Ljava/util/Map;
@@ -70,15 +70,15 @@ public final class io/github/wulkanowy/sdk/Sdk {
 	public final fun getSelfGovernments (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getSemesters (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getSentMessages (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getSentMessages$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getSentMessages$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getStudentId ()I
 	public final fun getStudentInfo (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getStudentPhoto (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getStudentThreats (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getStudentsFromHebe (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getStudentsFromHebe$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getStudentsFromHebe$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getStudentsHybrid (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getStudentsHybrid$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getStudentsHybrid$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getStudentsTrips (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getSubjects (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getSymbol ()Ljava/lang/String;
@@ -90,7 +90,7 @@ public final class io/github/wulkanowy/sdk/Sdk {
 	public final fun getUserAgentTemplate ()Ljava/lang/String;
 	public final fun getUserSubjectsFromScrapper (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public final fun getUserSubjectsFromScrapper (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-	public static synthetic fun getUserSubjectsFromScrapper$default (Lio/github/wulkanowy/sdk/Sdk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static synthetic fun getUserSubjectsFromScrapper$default (Lio/github/freewulkanowy/sdk/Sdk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 	public final fun getVHeaders ()Ljava/util/Map;
 	public final fun getVParamsEvaluation ()Lkotlin/jvm/functions/Function1;
 	public final fun getVTokenMapping ()Ljava/util/Map;
@@ -112,9 +112,9 @@ public final class io/github/wulkanowy/sdk/Sdk {
 	public final fun setKeyId (Ljava/lang/String;)V
 	public final fun setKindergartenDiaryId (I)V
 	public final fun setLogLevel (Lokhttp3/logging/HttpLoggingInterceptor$Level;)V
-	public final fun setLoginType (Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;)V
+	public final fun setLoginType (Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;)V
 	public final fun setMobileBaseUrl (Ljava/lang/String;)V
-	public final fun setMode (Lio/github/wulkanowy/sdk/Sdk$Mode;)V
+	public final fun setMode (Lio/github/freewulkanowy/sdk/Sdk$Mode;)V
 	public final fun setPassword (Ljava/lang/String;)V
 	public final fun setPrivatePem (Ljava/lang/String;)V
 	public final fun setResponseMapping (Ljava/util/Map;)V
@@ -129,57 +129,57 @@ public final class io/github/wulkanowy/sdk/Sdk {
 	public final fun setVHeaders (Ljava/util/Map;)V
 	public final fun setVParamsEvaluation (Lkotlin/jvm/functions/Function1;)V
 	public final fun setVTokenMapping (Ljava/util/Map;)V
-	public final fun switchDiary (III)Lio/github/wulkanowy/sdk/Sdk;
-	public final fun switchDiary (IIII)Lio/github/wulkanowy/sdk/Sdk;
-	public static synthetic fun switchDiary$default (Lio/github/wulkanowy/sdk/Sdk;IIIIILjava/lang/Object;)Lio/github/wulkanowy/sdk/Sdk;
+	public final fun switchDiary (III)Lio/github/freewulkanowy/sdk/Sdk;
+	public final fun switchDiary (IIII)Lio/github/freewulkanowy/sdk/Sdk;
+	public static synthetic fun switchDiary$default (Lio/github/freewulkanowy/sdk/Sdk;IIIIILjava/lang/Object;)Lio/github/freewulkanowy/sdk/Sdk;
 	public final fun unregisterDevice (ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
 
-public final class io/github/wulkanowy/sdk/Sdk$Mode : java/lang/Enum {
-	public static final field HEBE Lio/github/wulkanowy/sdk/Sdk$Mode;
-	public static final field HYBRID Lio/github/wulkanowy/sdk/Sdk$Mode;
-	public static final field SCRAPPER Lio/github/wulkanowy/sdk/Sdk$Mode;
+public final class io/github/freewulkanowy/sdk/Sdk$Mode : java/lang/Enum {
+	public static final field HEBE Lio/github/freewulkanowy/sdk/Sdk$Mode;
+	public static final field HYBRID Lio/github/freewulkanowy/sdk/Sdk$Mode;
+	public static final field SCRAPPER Lio/github/freewulkanowy/sdk/Sdk$Mode;
 	public static fun getEntries ()Lkotlin/enums/EnumEntries;
-	public static fun valueOf (Ljava/lang/String;)Lio/github/wulkanowy/sdk/Sdk$Mode;
-	public static fun values ()[Lio/github/wulkanowy/sdk/Sdk$Mode;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/freewulkanowy/sdk/Sdk$Mode;
+	public static fun values ()[Lio/github/freewulkanowy/sdk/Sdk$Mode;
 }
 
-public final class io/github/wulkanowy/sdk/Sdk$ScrapperLoginType : java/lang/Enum {
-	public static final field ADFS Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
-	public static final field ADFSCards Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
-	public static final field ADFSLight Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
-	public static final field ADFSLightCufs Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
-	public static final field ADFSLightScoped Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
-	public static final field AUTO Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
-	public static final field STANDARD Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
+public final class io/github/freewulkanowy/sdk/Sdk$ScrapperLoginType : java/lang/Enum {
+	public static final field ADFS Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
+	public static final field ADFSCards Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
+	public static final field ADFSLight Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
+	public static final field ADFSLightCufs Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
+	public static final field ADFSLightScoped Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
+	public static final field AUTO Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
+	public static final field STANDARD Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
 	public static fun getEntries ()Lkotlin/enums/EnumEntries;
-	public static fun valueOf (Ljava/lang/String;)Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
-	public static fun values ()[Lio/github/wulkanowy/sdk/Sdk$ScrapperLoginType;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
+	public static fun values ()[Lio/github/freewulkanowy/sdk/Sdk$ScrapperLoginType;
 }
 
-public final class io/github/wulkanowy/sdk/UtilsKt {
+public final class io/github/freewulkanowy/sdk/UtilsKt {
 	public static final fun normalizeRecipient (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun toLocalDate (J)Ljava/time/LocalDate;
 	public static final fun toLocalDateTime (J)Ljava/time/LocalDateTime;
 	public static final fun toLocalDateTime (Ljava/lang/String;Ljava/lang/String;)Ljava/time/LocalDateTime;
 }
 
-public final class io/github/wulkanowy/sdk/exception/FeatureNotAvailableException : java/io/IOException {
+public final class io/github/freewulkanowy/sdk/exception/FeatureNotAvailableException : java/io/IOException {
 }
 
-public final class io/github/wulkanowy/sdk/exception/VulcanException : java/io/IOException {
+public final class io/github/freewulkanowy/sdk/exception/VulcanException : java/io/IOException {
 }
 
-public final class io/github/wulkanowy/sdk/mapper/StudentsMapperKt {
-	public static final fun mapHebeUser (Ljava/util/List;Lio/github/wulkanowy/sdk/hebe/register/RegisterDevice;)Lio/github/wulkanowy/sdk/pojo/RegisterUser;
+public final class io/github/freewulkanowy/sdk/mapper/StudentsMapperKt {
+	public static final fun mapHebeUser (Ljava/util/List;Lio/github/freewulkanowy/sdk/hebe/register/RegisterDevice;)Lio/github/freewulkanowy/sdk/pojo/RegisterUser;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Absent {
+public final class io/github/freewulkanowy/sdk/pojo/Absent {
 	public fun <init> (Ljava/time/LocalDateTime;Ljava/lang/Integer;)V
 	public final fun component1 ()Ljava/time/LocalDateTime;
 	public final fun component2 ()Ljava/lang/Integer;
-	public final fun copy (Ljava/time/LocalDateTime;Ljava/lang/Integer;)Lio/github/wulkanowy/sdk/pojo/Absent;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Absent;Ljava/time/LocalDateTime;Ljava/lang/Integer;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Absent;
+	public final fun copy (Ljava/time/LocalDateTime;Ljava/lang/Integer;)Lio/github/freewulkanowy/sdk/pojo/Absent;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Absent;Ljava/time/LocalDateTime;Ljava/lang/Integer;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Absent;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/time/LocalDateTime;
 	public final fun getTimeId ()Ljava/lang/Integer;
@@ -187,14 +187,14 @@ public final class io/github/wulkanowy/sdk/pojo/Absent {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Attendance {
-	public fun <init> (ILjava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;IZZZZZZZLio/github/wulkanowy/sdk/scrapper/attendance/SentExcuseStatus;)V
+public final class io/github/freewulkanowy/sdk/pojo/Attendance {
+	public fun <init> (ILjava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;IZZZZZZZLio/github/freewulkanowy/sdk/scrapper/attendance/SentExcuseStatus;)V
 	public final fun component1 ()I
 	public final fun component10 ()Z
 	public final fun component11 ()Z
 	public final fun component12 ()Z
 	public final fun component13 ()Z
-	public final fun component14 ()Lio/github/wulkanowy/sdk/scrapper/attendance/SentExcuseStatus;
+	public final fun component14 ()Lio/github/freewulkanowy/sdk/scrapper/attendance/SentExcuseStatus;
 	public final fun component2 ()Ljava/time/LocalDate;
 	public final fun component3 ()I
 	public final fun component4 ()Ljava/lang/String;
@@ -203,15 +203,15 @@ public final class io/github/wulkanowy/sdk/pojo/Attendance {
 	public final fun component7 ()Z
 	public final fun component8 ()Z
 	public final fun component9 ()Z
-	public final fun copy (ILjava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;IZZZZZZZLio/github/wulkanowy/sdk/scrapper/attendance/SentExcuseStatus;)Lio/github/wulkanowy/sdk/pojo/Attendance;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Attendance;ILjava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;IZZZZZZZLio/github/wulkanowy/sdk/scrapper/attendance/SentExcuseStatus;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Attendance;
+	public final fun copy (ILjava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;IZZZZZZZLio/github/freewulkanowy/sdk/scrapper/attendance/SentExcuseStatus;)Lio/github/freewulkanowy/sdk/pojo/Attendance;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Attendance;ILjava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;IZZZZZZZLio/github/freewulkanowy/sdk/scrapper/attendance/SentExcuseStatus;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Attendance;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAbsence ()Z
 	public final fun getCategoryId ()I
 	public final fun getDate ()Ljava/time/LocalDate;
 	public final fun getDeleted ()Z
 	public final fun getExcusable ()Z
-	public final fun getExcuseStatus ()Lio/github/wulkanowy/sdk/scrapper/attendance/SentExcuseStatus;
+	public final fun getExcuseStatus ()Lio/github/freewulkanowy/sdk/scrapper/attendance/SentExcuseStatus;
 	public final fun getExcused ()Z
 	public final fun getExemption ()Z
 	public final fun getLateness ()Z
@@ -224,7 +224,7 @@ public final class io/github/wulkanowy/sdk/pojo/Attendance {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/AttendanceSummary {
+public final class io/github/freewulkanowy/sdk/pojo/AttendanceSummary {
 	public fun <init> (Ljava/time/Month;IIIIIII)V
 	public final fun component1 ()Ljava/time/Month;
 	public final fun component2 ()I
@@ -234,8 +234,8 @@ public final class io/github/wulkanowy/sdk/pojo/AttendanceSummary {
 	public final fun component6 ()I
 	public final fun component7 ()I
 	public final fun component8 ()I
-	public final fun copy (Ljava/time/Month;IIIIIII)Lio/github/wulkanowy/sdk/pojo/AttendanceSummary;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/AttendanceSummary;Ljava/time/Month;IIIIIIIILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/AttendanceSummary;
+	public final fun copy (Ljava/time/Month;IIIIIII)Lio/github/freewulkanowy/sdk/pojo/AttendanceSummary;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/AttendanceSummary;Ljava/time/Month;IIIIIIIILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/AttendanceSummary;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAbsence ()I
 	public final fun getAbsenceExcused ()I
@@ -249,7 +249,7 @@ public final class io/github/wulkanowy/sdk/pojo/AttendanceSummary {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/CompletedLesson {
+public final class io/github/freewulkanowy/sdk/pojo/CompletedLesson {
 	public fun <init> (Ljava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()I
@@ -260,8 +260,8 @@ public final class io/github/wulkanowy/sdk/pojo/CompletedLesson {
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/lang/String;
 	public final fun component9 ()Ljava/lang/String;
-	public final fun copy (Ljava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/CompletedLesson;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/CompletedLesson;Ljava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/CompletedLesson;
+	public final fun copy (Ljava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/CompletedLesson;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/CompletedLesson;Ljava/time/LocalDate;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/CompletedLesson;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAbsence ()Ljava/lang/String;
 	public final fun getDate ()Ljava/time/LocalDate;
@@ -276,7 +276,7 @@ public final class io/github/wulkanowy/sdk/pojo/CompletedLesson {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Conference {
+public final class io/github/freewulkanowy/sdk/pojo/Conference {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;ILjava/time/ZonedDateTime;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -285,8 +285,8 @@ public final class io/github/wulkanowy/sdk/pojo/Conference {
 	public final fun component5 ()Ljava/lang/Object;
 	public final fun component6 ()I
 	public final fun component7 ()Ljava/time/ZonedDateTime;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;ILjava/time/ZonedDateTime;)Lio/github/wulkanowy/sdk/pojo/Conference;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Conference;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;ILjava/time/ZonedDateTime;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Conference;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;ILjava/time/ZonedDateTime;)Lio/github/freewulkanowy/sdk/pojo/Conference;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Conference;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;ILjava/time/ZonedDateTime;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Conference;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAgenda ()Ljava/lang/String;
 	public final fun getDate ()Ljava/time/ZonedDateTime;
@@ -299,15 +299,15 @@ public final class io/github/wulkanowy/sdk/pojo/Conference {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Device {
+public final class io/github/freewulkanowy/sdk/pojo/Device {
 	public fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/time/ZonedDateTime;
 	public final fun component5 ()Ljava/time/ZonedDateTime;
-	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;)Lio/github/wulkanowy/sdk/pojo/Device;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Device;ILjava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Device;
+	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;)Lio/github/freewulkanowy/sdk/pojo/Device;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Device;ILjava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Device;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getCreateDate ()Ljava/time/ZonedDateTime;
 	public final fun getDeviceId ()Ljava/lang/String;
@@ -318,13 +318,13 @@ public final class io/github/wulkanowy/sdk/pojo/Device {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/DirectorInformation {
+public final class io/github/freewulkanowy/sdk/pojo/DirectorInformation {
 	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
-	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/DirectorInformation;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/DirectorInformation;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/DirectorInformation;
+	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/DirectorInformation;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/DirectorInformation;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/DirectorInformation;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getContent ()Ljava/lang/String;
 	public final fun getDate ()Ljava/time/LocalDate;
@@ -333,7 +333,7 @@ public final class io/github/wulkanowy/sdk/pojo/DirectorInformation {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Exam {
+public final class io/github/freewulkanowy/sdk/pojo/Exam {
 	public fun <init> (Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/time/LocalDate;
@@ -342,8 +342,8 @@ public final class io/github/wulkanowy/sdk/pojo/Exam {
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Ljava/lang/String;
-	public final fun copy (Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/Exam;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Exam;Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Exam;
+	public final fun copy (Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/Exam;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Exam;Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Exam;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/time/LocalDate;
 	public final fun getDescription ()Ljava/lang/String;
@@ -356,24 +356,24 @@ public final class io/github/wulkanowy/sdk/pojo/Exam {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Folder : java/lang/Enum {
-	public static final field RECEIVED Lio/github/wulkanowy/sdk/pojo/Folder;
-	public static final field SENT Lio/github/wulkanowy/sdk/pojo/Folder;
-	public static final field TRASHED Lio/github/wulkanowy/sdk/pojo/Folder;
+public final class io/github/freewulkanowy/sdk/pojo/Folder : java/lang/Enum {
+	public static final field RECEIVED Lio/github/freewulkanowy/sdk/pojo/Folder;
+	public static final field SENT Lio/github/freewulkanowy/sdk/pojo/Folder;
+	public static final field TRASHED Lio/github/freewulkanowy/sdk/pojo/Folder;
 	public static fun getEntries ()Lkotlin/enums/EnumEntries;
 	public final fun getId ()I
-	public static fun valueOf (Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/Folder;
-	public static fun values ()[Lio/github/wulkanowy/sdk/pojo/Folder;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/Folder;
+	public static fun values ()[Lio/github/freewulkanowy/sdk/pojo/Folder;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GovernmentMember {
+public final class io/github/freewulkanowy/sdk/pojo/GovernmentMember {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()I
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/pojo/GovernmentMember;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GovernmentMember;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GovernmentMember;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/pojo/GovernmentMember;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GovernmentMember;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GovernmentMember;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDivision ()Ljava/lang/String;
 	public final fun getId ()I
@@ -383,12 +383,12 @@ public final class io/github/wulkanowy/sdk/pojo/GovernmentMember {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GovernmentUnit {
+public final class io/github/freewulkanowy/sdk/pojo/GovernmentUnit {
 	public fun <init> (Ljava/lang/String;Ljava/util/List;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/util/List;
-	public final fun copy (Ljava/lang/String;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/GovernmentUnit;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GovernmentUnit;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GovernmentUnit;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/GovernmentUnit;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GovernmentUnit;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GovernmentUnit;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getPeople ()Ljava/util/List;
 	public final fun getUnitName ()Ljava/lang/String;
@@ -396,7 +396,7 @@ public final class io/github/wulkanowy/sdk/pojo/GovernmentUnit {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Grade {
+public final class io/github/freewulkanowy/sdk/pojo/Grade {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;DDLjava/lang/String;DLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component10 ()Ljava/lang/String;
@@ -410,8 +410,8 @@ public final class io/github/wulkanowy/sdk/pojo/Grade {
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/lang/String;
 	public final fun component9 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;DDLjava/lang/String;DLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;)Lio/github/wulkanowy/sdk/pojo/Grade;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Grade;Ljava/lang/String;Ljava/lang/String;DDLjava/lang/String;DLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Grade;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;DDLjava/lang/String;DLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;)Lio/github/freewulkanowy/sdk/pojo/Grade;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Grade;Ljava/lang/String;Ljava/lang/String;DDLjava/lang/String;DLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Grade;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getColor ()Ljava/lang/String;
 	public final fun getComment ()Ljava/lang/String;
@@ -429,12 +429,12 @@ public final class io/github/wulkanowy/sdk/pojo/Grade {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GradeDescriptive {
+public final class io/github/freewulkanowy/sdk/pojo/GradeDescriptive {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/GradeDescriptive;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GradeDescriptive;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GradeDescriptive;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/GradeDescriptive;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GradeDescriptive;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GradeDescriptive;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDescription ()Ljava/lang/String;
 	public final fun getSubject ()Ljava/lang/String;
@@ -442,13 +442,13 @@ public final class io/github/wulkanowy/sdk/pojo/GradeDescriptive {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GradePointsStatistics {
+public final class io/github/freewulkanowy/sdk/pojo/GradePointsStatistics {
 	public fun <init> (Ljava/lang/String;DD)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()D
 	public final fun component3 ()D
-	public final fun copy (Ljava/lang/String;DD)Lio/github/wulkanowy/sdk/pojo/GradePointsStatistics;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GradePointsStatistics;Ljava/lang/String;DDILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GradePointsStatistics;
+	public final fun copy (Ljava/lang/String;DD)Lio/github/freewulkanowy/sdk/pojo/GradePointsStatistics;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GradePointsStatistics;Ljava/lang/String;DDILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GradePointsStatistics;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getOthers ()D
 	public final fun getStudent ()D
@@ -457,13 +457,13 @@ public final class io/github/wulkanowy/sdk/pojo/GradePointsStatistics {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GradeStatisticsItem {
+public final class io/github/freewulkanowy/sdk/pojo/GradeStatisticsItem {
 	public fun <init> (Ljava/lang/String;II)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()I
 	public final fun component3 ()I
-	public final fun copy (Ljava/lang/String;II)Lio/github/wulkanowy/sdk/pojo/GradeStatisticsItem;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GradeStatisticsItem;Ljava/lang/String;IIILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GradeStatisticsItem;
+	public final fun copy (Ljava/lang/String;II)Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsItem;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsItem;Ljava/lang/String;IIILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsItem;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAmount ()I
 	public final fun getGrade ()I
@@ -472,12 +472,12 @@ public final class io/github/wulkanowy/sdk/pojo/GradeStatisticsItem {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GradeStatisticsSemester {
+public final class io/github/freewulkanowy/sdk/pojo/GradeStatisticsSemester {
 	public fun <init> (Ljava/lang/String;Ljava/util/List;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/util/List;
-	public final fun copy (Ljava/lang/String;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSemester;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSemester;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSemester;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSemester;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSemester;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSemester;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getItems ()Ljava/util/List;
 	public final fun getSubject ()Ljava/lang/String;
@@ -485,13 +485,13 @@ public final class io/github/wulkanowy/sdk/pojo/GradeStatisticsSemester {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem {
+public final class io/github/freewulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem {
 	public fun <init> (IIZ)V
 	public final fun component1 ()I
 	public final fun component2 ()I
 	public final fun component3 ()Z
-	public final fun copy (IIZ)Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem;IIZILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem;
+	public final fun copy (IIZ)Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem;IIZILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAmount ()I
 	public final fun getGrade ()I
@@ -500,15 +500,15 @@ public final class io/github/wulkanowy/sdk/pojo/GradeStatisticsSemesterSubItem {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GradeStatisticsSubject {
+public final class io/github/freewulkanowy/sdk/pojo/GradeStatisticsSubject {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/util/List;
 	public final fun component5 ()Ljava/util/List;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSubject;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSubject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GradeStatisticsSubject;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSubject;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSubject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GradeStatisticsSubject;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getClassAverage ()Ljava/lang/String;
 	public final fun getClassItems ()Ljava/util/List;
@@ -519,7 +519,7 @@ public final class io/github/wulkanowy/sdk/pojo/GradeStatisticsSubject {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/GradeSummary {
+public final class io/github/freewulkanowy/sdk/pojo/GradeSummary {
 	public fun <init> (Ljava/lang/String;DLjava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public synthetic fun <init> (Ljava/lang/String;DLjava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
@@ -531,8 +531,8 @@ public final class io/github/wulkanowy/sdk/pojo/GradeSummary {
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/lang/String;
 	public final fun component9 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;DLjava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/GradeSummary;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/GradeSummary;Ljava/lang/String;DLjava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/GradeSummary;
+	public final fun copy (Ljava/lang/String;DLjava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/GradeSummary;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/GradeSummary;Ljava/lang/String;DLjava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/GradeSummary;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAverage ()D
 	public final fun getAverageAllYear ()Ljava/lang/Double;
@@ -547,7 +547,7 @@ public final class io/github/wulkanowy/sdk/pojo/GradeSummary {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Grades {
+public final class io/github/freewulkanowy/sdk/pojo/Grades {
 	public fun <init> (Ljava/util/List;Ljava/util/List;Ljava/util/List;ZZZI)V
 	public final fun component1 ()Ljava/util/List;
 	public final fun component2 ()Ljava/util/List;
@@ -556,8 +556,8 @@ public final class io/github/wulkanowy/sdk/pojo/Grades {
 	public final fun component5 ()Z
 	public final fun component6 ()Z
 	public final fun component7 ()I
-	public final fun copy (Ljava/util/List;Ljava/util/List;Ljava/util/List;ZZZI)Lio/github/wulkanowy/sdk/pojo/Grades;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Grades;Ljava/util/List;Ljava/util/List;Ljava/util/List;ZZZIILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Grades;
+	public final fun copy (Ljava/util/List;Ljava/util/List;Ljava/util/List;ZZZI)Lio/github/freewulkanowy/sdk/pojo/Grades;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Grades;Ljava/util/List;Ljava/util/List;Ljava/util/List;ZZZIILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Grades;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDescriptive ()Ljava/util/List;
 	public final fun getDetails ()Ljava/util/List;
@@ -570,7 +570,7 @@ public final class io/github/wulkanowy/sdk/pojo/Grades {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Homework {
+public final class io/github/freewulkanowy/sdk/pojo/Homework {
 	public fun <init> (Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/time/LocalDate;
@@ -579,8 +579,8 @@ public final class io/github/wulkanowy/sdk/pojo/Homework {
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Ljava/util/List;
-	public final fun copy (Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/Homework;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Homework;Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Homework;
+	public final fun copy (Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/Homework;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Homework;Ljava/time/LocalDate;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Homework;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAttachments ()Ljava/util/List;
 	public final fun getContent ()Ljava/lang/String;
@@ -593,12 +593,12 @@ public final class io/github/wulkanowy/sdk/pojo/Homework {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/HomeworkAttachment {
+public final class io/github/freewulkanowy/sdk/pojo/HomeworkAttachment {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/HomeworkAttachment;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/HomeworkAttachment;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/HomeworkAttachment;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/HomeworkAttachment;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/HomeworkAttachment;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/HomeworkAttachment;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getName ()Ljava/lang/String;
 	public final fun getUrl ()Ljava/lang/String;
@@ -606,14 +606,14 @@ public final class io/github/wulkanowy/sdk/pojo/HomeworkAttachment {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/LastAnnouncement {
+public final class io/github/freewulkanowy/sdk/pojo/LastAnnouncement {
 	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/LastAnnouncement;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/LastAnnouncement;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/LastAnnouncement;
+	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/LastAnnouncement;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/LastAnnouncement;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/LastAnnouncement;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAuthor ()Ljava/lang/String;
 	public final fun getContent ()Ljava/lang/String;
@@ -623,7 +623,7 @@ public final class io/github/wulkanowy/sdk/pojo/LastAnnouncement {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Lesson {
+public final class io/github/freewulkanowy/sdk/pojo/Lesson {
 	public fun <init> (ILjava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZ)V
 	public final fun component1 ()I
 	public final fun component10 ()Ljava/lang/String;
@@ -640,8 +640,8 @@ public final class io/github/wulkanowy/sdk/pojo/Lesson {
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/lang/String;
 	public final fun component9 ()Ljava/lang/String;
-	public final fun copy (ILjava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZ)Lio/github/wulkanowy/sdk/pojo/Lesson;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Lesson;ILjava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Lesson;
+	public final fun copy (ILjava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZ)Lio/github/freewulkanowy/sdk/pojo/Lesson;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Lesson;ILjava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Lesson;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getCanceled ()Z
 	public final fun getChanges ()Z
@@ -662,14 +662,14 @@ public final class io/github/wulkanowy/sdk/pojo/Lesson {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/LessonAdditional {
+public final class io/github/freewulkanowy/sdk/pojo/LessonAdditional {
 	public fun <init> (Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/time/ZonedDateTime;
 	public final fun component2 ()Ljava/time/ZonedDateTime;
 	public final fun component3 ()Ljava/time/LocalDate;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun copy (Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/LessonAdditional;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/LessonAdditional;Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/LessonAdditional;
+	public final fun copy (Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/LessonAdditional;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/LessonAdditional;Ljava/time/ZonedDateTime;Ljava/time/ZonedDateTime;Ljava/time/LocalDate;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/LessonAdditional;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/time/LocalDate;
 	public final fun getEnd ()Ljava/time/ZonedDateTime;
@@ -679,13 +679,13 @@ public final class io/github/wulkanowy/sdk/pojo/LessonAdditional {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/LuckyNumber {
+public final class io/github/freewulkanowy/sdk/pojo/LuckyNumber {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;I)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()I
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/pojo/LuckyNumber;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/LuckyNumber;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/LuckyNumber;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/pojo/LuckyNumber;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/LuckyNumber;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/LuckyNumber;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getNumber ()I
 	public final fun getSchool ()Ljava/lang/String;
@@ -694,52 +694,52 @@ public final class io/github/wulkanowy/sdk/pojo/LuckyNumber {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Mailbox {
-	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/MailboxType;)V
+public final class io/github/freewulkanowy/sdk/pojo/Mailbox {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/MailboxType;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/String;
-	public final fun component6 ()Lio/github/wulkanowy/sdk/pojo/MailboxType;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/MailboxType;)Lio/github/wulkanowy/sdk/pojo/Mailbox;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Mailbox;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/MailboxType;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Mailbox;
+	public final fun component6 ()Lio/github/freewulkanowy/sdk/pojo/MailboxType;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/MailboxType;)Lio/github/freewulkanowy/sdk/pojo/Mailbox;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Mailbox;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/MailboxType;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Mailbox;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getFullName ()Ljava/lang/String;
 	public final fun getGlobalKey ()Ljava/lang/String;
 	public final fun getSchoolNameShort ()Ljava/lang/String;
 	public final fun getStudentName ()Ljava/lang/String;
-	public final fun getType ()Lio/github/wulkanowy/sdk/pojo/MailboxType;
+	public final fun getType ()Lio/github/freewulkanowy/sdk/pojo/MailboxType;
 	public final fun getUserName ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/MailboxType : java/lang/Enum {
-	public static final field Companion Lio/github/wulkanowy/sdk/pojo/MailboxType$Companion;
-	public static final field EMPLOYEE Lio/github/wulkanowy/sdk/pojo/MailboxType;
-	public static final field GUARDIAN Lio/github/wulkanowy/sdk/pojo/MailboxType;
-	public static final field PARENT Lio/github/wulkanowy/sdk/pojo/MailboxType;
-	public static final field STUDENT Lio/github/wulkanowy/sdk/pojo/MailboxType;
-	public static final field UNKNOWN Lio/github/wulkanowy/sdk/pojo/MailboxType;
+public final class io/github/freewulkanowy/sdk/pojo/MailboxType : java/lang/Enum {
+	public static final field Companion Lio/github/freewulkanowy/sdk/pojo/MailboxType$Companion;
+	public static final field EMPLOYEE Lio/github/freewulkanowy/sdk/pojo/MailboxType;
+	public static final field GUARDIAN Lio/github/freewulkanowy/sdk/pojo/MailboxType;
+	public static final field PARENT Lio/github/freewulkanowy/sdk/pojo/MailboxType;
+	public static final field STUDENT Lio/github/freewulkanowy/sdk/pojo/MailboxType;
+	public static final field UNKNOWN Lio/github/freewulkanowy/sdk/pojo/MailboxType;
 	public static fun getEntries ()Lkotlin/enums/EnumEntries;
 	public final fun getLetter ()Ljava/lang/String;
-	public static fun valueOf (Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/MailboxType;
-	public static fun values ()[Lio/github/wulkanowy/sdk/pojo/MailboxType;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/MailboxType;
+	public static fun values ()[Lio/github/freewulkanowy/sdk/pojo/MailboxType;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/MailboxType$Companion {
-	public final fun fromLetter (Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/MailboxType;
+public final class io/github/freewulkanowy/sdk/pojo/MailboxType$Companion {
+	public final fun fromLetter (Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/MailboxType;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Meal {
+public final class io/github/freewulkanowy/sdk/pojo/Meal {
 	public fun <init> (Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/util/List;
 	public final fun component3 ()Ljava/util/List;
 	public final fun component4 ()Ljava/util/List;
-	public final fun copy (Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/Meal;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Meal;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Meal;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/Meal;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Meal;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Meal;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAllergens ()Ljava/util/List;
 	public final fun getDetails ()Ljava/util/List;
@@ -749,12 +749,12 @@ public final class io/github/wulkanowy/sdk/pojo/Meal {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/MealDetail {
+public final class io/github/freewulkanowy/sdk/pojo/MealDetail {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/MealDetail;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/MealDetail;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/MealDetail;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/MealDetail;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/MealDetail;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/MealDetail;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getLabel ()Ljava/lang/String;
 	public final fun getValue ()Ljava/lang/String;
@@ -762,13 +762,13 @@ public final class io/github/wulkanowy/sdk/pojo/MealDetail {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/MealIngredient {
+public final class io/github/freewulkanowy/sdk/pojo/MealIngredient {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;I)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()I
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/pojo/MealIngredient;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/MealIngredient;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/MealIngredient;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/pojo/MealIngredient;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/MealIngredient;Ljava/lang/String;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/MealIngredient;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getMeasurementUnit ()Ljava/lang/String;
 	public final fun getMeasurementUnitValue ()I
@@ -777,13 +777,13 @@ public final class io/github/wulkanowy/sdk/pojo/MealIngredient {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Menu {
+public final class io/github/freewulkanowy/sdk/pojo/Menu {
 	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;Ljava/util/List;)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/util/List;
-	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/Menu;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Menu;Ljava/time/LocalDate;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Menu;
+	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/Menu;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Menu;Ljava/time/LocalDate;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Menu;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getDate ()Ljava/time/LocalDate;
 	public final fun getDiet ()Ljava/lang/String;
@@ -792,7 +792,7 @@ public final class io/github/wulkanowy/sdk/pojo/Menu {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Message {
+public final class io/github/freewulkanowy/sdk/pojo/Message {
 	public fun <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;IZLjava/lang/Integer;Ljava/lang/Integer;Z)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component10 ()Z
@@ -807,8 +807,8 @@ public final class io/github/wulkanowy/sdk/pojo/Message {
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/time/ZonedDateTime;
 	public final fun component9 ()I
-	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;IZLjava/lang/Integer;Ljava/lang/Integer;Z)Lio/github/wulkanowy/sdk/pojo/Message;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Message;Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;IZLjava/lang/Integer;Ljava/lang/Integer;ZILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Message;
+	public final fun copy (Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;IZLjava/lang/Integer;Ljava/lang/Integer;Z)Lio/github/freewulkanowy/sdk/pojo/Message;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Message;Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/ZonedDateTime;IZLjava/lang/Integer;Ljava/lang/Integer;ZILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Message;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getContent ()Ljava/lang/String;
 	public final fun getCorrespondents ()Ljava/lang/String;
@@ -827,12 +827,12 @@ public final class io/github/wulkanowy/sdk/pojo/Message {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/MessageAttachment {
+public final class io/github/freewulkanowy/sdk/pojo/MessageAttachment {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/MessageAttachment;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/MessageAttachment;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/MessageAttachment;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/MessageAttachment;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/MessageAttachment;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/MessageAttachment;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getFilename ()Ljava/lang/String;
 	public final fun getUrl ()Ljava/lang/String;
@@ -840,7 +840,7 @@ public final class io/github/wulkanowy/sdk/pojo/MessageAttachment {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/MessageDetails {
+public final class io/github/freewulkanowy/sdk/pojo/MessageDetails {
 	public fun <init> (Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;I)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/util/List;
@@ -850,8 +850,8 @@ public final class io/github/wulkanowy/sdk/pojo/MessageDetails {
 	public final fun component6 ()Ljava/util/List;
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()I
-	public final fun copy (Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/pojo/MessageDetails;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/MessageDetails;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/MessageDetails;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/pojo/MessageDetails;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/MessageDetails;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/MessageDetails;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getApiGlobalKey ()Ljava/lang/String;
 	public final fun getAttachments ()Ljava/util/List;
@@ -865,8 +865,8 @@ public final class io/github/wulkanowy/sdk/pojo/MessageDetails {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/MessageReplayDetails {
-	public fun <init> (Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/Recipient;Ljava/util/List;Ljava/lang/String;I)V
+public final class io/github/freewulkanowy/sdk/pojo/MessageReplayDetails {
+	public fun <init> (Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/Recipient;Ljava/util/List;Ljava/lang/String;I)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component10 ()Ljava/lang/String;
 	public final fun component11 ()I
@@ -876,10 +876,10 @@ public final class io/github/wulkanowy/sdk/pojo/MessageReplayDetails {
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Ljava/lang/String;
-	public final fun component8 ()Lio/github/wulkanowy/sdk/pojo/Recipient;
+	public final fun component8 ()Lio/github/freewulkanowy/sdk/pojo/Recipient;
 	public final fun component9 ()Ljava/util/List;
-	public final fun copy (Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/Recipient;Ljava/util/List;Ljava/lang/String;I)Lio/github/wulkanowy/sdk/pojo/MessageReplayDetails;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/MessageReplayDetails;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/Recipient;Ljava/util/List;Ljava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/MessageReplayDetails;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/Recipient;Ljava/util/List;Ljava/lang/String;I)Lio/github/freewulkanowy/sdk/pojo/MessageReplayDetails;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/MessageReplayDetails;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/Recipient;Ljava/util/List;Ljava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/MessageReplayDetails;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getApiGlobalKey ()Ljava/lang/String;
 	public final fun getAttachments ()Ljava/util/List;
@@ -888,7 +888,7 @@ public final class io/github/wulkanowy/sdk/pojo/MessageReplayDetails {
 	public final fun getId ()I
 	public final fun getMailboxId ()Ljava/lang/String;
 	public final fun getRecipients ()Ljava/util/List;
-	public final fun getSender ()Lio/github/wulkanowy/sdk/pojo/Recipient;
+	public final fun getSender ()Lio/github/freewulkanowy/sdk/pojo/Recipient;
 	public final fun getSenderMailboxId ()Ljava/lang/String;
 	public final fun getSenderMailboxName ()Ljava/lang/String;
 	public final fun getSubject ()Ljava/lang/String;
@@ -896,21 +896,21 @@ public final class io/github/wulkanowy/sdk/pojo/MessageReplayDetails {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Note {
-	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/scrapper/notes/NoteCategory;ZILjava/lang/String;)V
+public final class io/github/freewulkanowy/sdk/pojo/Note {
+	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/scrapper/notes/NoteCategory;ZILjava/lang/String;)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun component5 ()Lio/github/wulkanowy/sdk/scrapper/notes/NoteCategory;
+	public final fun component5 ()Lio/github/freewulkanowy/sdk/scrapper/notes/NoteCategory;
 	public final fun component6 ()Z
 	public final fun component7 ()I
 	public final fun component8 ()Ljava/lang/String;
-	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/scrapper/notes/NoteCategory;ZILjava/lang/String;)Lio/github/wulkanowy/sdk/pojo/Note;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Note;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/scrapper/notes/NoteCategory;ZILjava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Note;
+	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/scrapper/notes/NoteCategory;ZILjava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/Note;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Note;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/scrapper/notes/NoteCategory;ZILjava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Note;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getCategory ()Ljava/lang/String;
-	public final fun getCategoryType ()Lio/github/wulkanowy/sdk/scrapper/notes/NoteCategory;
+	public final fun getCategoryType ()Lio/github/freewulkanowy/sdk/scrapper/notes/NoteCategory;
 	public final fun getContent ()Ljava/lang/String;
 	public final fun getDate ()Ljava/time/LocalDate;
 	public final fun getPoints ()I
@@ -919,7 +919,7 @@ public final class io/github/wulkanowy/sdk/pojo/Note {
 	public final fun getTeacherSymbol ()Ljava/lang/String;
 	public fun hashCode ()I
 	public final fun setCategory (Ljava/lang/String;)V
-	public final fun setCategoryType (Lio/github/wulkanowy/sdk/scrapper/notes/NoteCategory;)V
+	public final fun setCategoryType (Lio/github/freewulkanowy/sdk/scrapper/notes/NoteCategory;)V
 	public final fun setContent (Ljava/lang/String;)V
 	public final fun setDate (Ljava/time/LocalDate;)V
 	public final fun setPoints (I)V
@@ -929,33 +929,33 @@ public final class io/github/wulkanowy/sdk/pojo/Note {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Recipient {
-	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/MailboxType;)V
+public final class io/github/freewulkanowy/sdk/pojo/Recipient {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/MailboxType;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/String;
-	public final fun component6 ()Lio/github/wulkanowy/sdk/pojo/MailboxType;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/MailboxType;)Lio/github/wulkanowy/sdk/pojo/Recipient;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Recipient;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/MailboxType;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Recipient;
+	public final fun component6 ()Lio/github/freewulkanowy/sdk/pojo/MailboxType;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/MailboxType;)Lio/github/freewulkanowy/sdk/pojo/Recipient;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Recipient;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/MailboxType;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Recipient;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getFullName ()Ljava/lang/String;
 	public final fun getMailboxGlobalKey ()Ljava/lang/String;
 	public final fun getSchoolNameShort ()Ljava/lang/String;
 	public final fun getStudentName ()Ljava/lang/String;
-	public final fun getType ()Lio/github/wulkanowy/sdk/pojo/MailboxType;
+	public final fun getType ()Lio/github/freewulkanowy/sdk/pojo/MailboxType;
 	public final fun getUserName ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/RegisterEmployee : io/github/wulkanowy/sdk/pojo/RegisterSubject {
+public final class io/github/freewulkanowy/sdk/pojo/RegisterEmployee : io/github/freewulkanowy/sdk/pojo/RegisterSubject {
 	public fun <init> (ILjava/lang/String;)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (ILjava/lang/String;)Lio/github/wulkanowy/sdk/pojo/RegisterEmployee;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/RegisterEmployee;ILjava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/RegisterEmployee;
+	public final fun copy (ILjava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/RegisterEmployee;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/RegisterEmployee;ILjava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/RegisterEmployee;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getEmployeeId ()I
 	public final fun getEmployeeName ()Ljava/lang/String;
@@ -963,7 +963,7 @@ public final class io/github/wulkanowy/sdk/pojo/RegisterEmployee : io/github/wul
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/RegisterStudent : io/github/wulkanowy/sdk/pojo/RegisterSubject {
+public final class io/github/freewulkanowy/sdk/pojo/RegisterStudent : io/github/freewulkanowy/sdk/pojo/RegisterSubject {
 	public fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZLjava/util/List;ZZ)V
 	public final fun component1 ()I
 	public final fun component10 ()Z
@@ -975,8 +975,8 @@ public final class io/github/wulkanowy/sdk/pojo/RegisterStudent : io/github/wulk
 	public final fun component7 ()Z
 	public final fun component8 ()Ljava/util/List;
 	public final fun component9 ()Z
-	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZLjava/util/List;ZZ)Lio/github/wulkanowy/sdk/pojo/RegisterStudent;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/RegisterStudent;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZLjava/util/List;ZZILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/RegisterStudent;
+	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZLjava/util/List;ZZ)Lio/github/freewulkanowy/sdk/pojo/RegisterStudent;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/RegisterStudent;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZLjava/util/List;ZZILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/RegisterStudent;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getClassId ()I
 	public final fun getClassName ()Ljava/lang/String;
@@ -992,10 +992,10 @@ public final class io/github/wulkanowy/sdk/pojo/RegisterStudent : io/github/wulk
 	public fun toString ()Ljava/lang/String;
 }
 
-public abstract interface class io/github/wulkanowy/sdk/pojo/RegisterSubject {
+public abstract interface class io/github/freewulkanowy/sdk/pojo/RegisterSubject {
 }
 
-public final class io/github/wulkanowy/sdk/pojo/RegisterSymbol {
+public final class io/github/freewulkanowy/sdk/pojo/RegisterSymbol {
 	public fun <init> (Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/Throwable;
@@ -1004,8 +1004,8 @@ public final class io/github/wulkanowy/sdk/pojo/RegisterSymbol {
 	public final fun component5 ()Ljava/lang/String;
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Ljava/util/List;
-	public final fun copy (Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/RegisterSymbol;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/RegisterSymbol;Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/RegisterSymbol;
+	public final fun copy (Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/RegisterSymbol;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/RegisterSymbol;Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/RegisterSymbol;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getError ()Ljava/lang/Throwable;
 	public final fun getHebeBaseUrl ()Ljava/lang/String;
@@ -1018,7 +1018,7 @@ public final class io/github/wulkanowy/sdk/pojo/RegisterSymbol {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/RegisterUnit {
+public final class io/github/freewulkanowy/sdk/pojo/RegisterUnit {
 	public fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Throwable;Ljava/util/List;)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
@@ -1029,8 +1029,8 @@ public final class io/github/wulkanowy/sdk/pojo/RegisterUnit {
 	public final fun component7 ()Ljava/util/List;
 	public final fun component8 ()Ljava/lang/Throwable;
 	public final fun component9 ()Ljava/util/List;
-	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Throwable;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/RegisterUnit;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/RegisterUnit;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Throwable;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/RegisterUnit;
+	public final fun copy (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Throwable;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/RegisterUnit;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/RegisterUnit;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/Throwable;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/RegisterUnit;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getEmployeeIds ()Ljava/util/List;
 	public final fun getError ()Ljava/lang/Throwable;
@@ -1045,36 +1045,36 @@ public final class io/github/wulkanowy/sdk/pojo/RegisterUnit {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/RegisterUser {
-	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/scrapper/Scrapper$LoginType;Lio/github/wulkanowy/sdk/Sdk$Mode;Ljava/util/List;)V
+public final class io/github/freewulkanowy/sdk/pojo/RegisterUser {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/scrapper/Scrapper$LoginType;Lio/github/freewulkanowy/sdk/Sdk$Mode;Ljava/util/List;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
-	public final fun component4 ()Lio/github/wulkanowy/sdk/scrapper/Scrapper$LoginType;
-	public final fun component5 ()Lio/github/wulkanowy/sdk/Sdk$Mode;
+	public final fun component4 ()Lio/github/freewulkanowy/sdk/scrapper/Scrapper$LoginType;
+	public final fun component5 ()Lio/github/freewulkanowy/sdk/Sdk$Mode;
 	public final fun component6 ()Ljava/util/List;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/scrapper/Scrapper$LoginType;Lio/github/wulkanowy/sdk/Sdk$Mode;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/RegisterUser;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/RegisterUser;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/scrapper/Scrapper$LoginType;Lio/github/wulkanowy/sdk/Sdk$Mode;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/RegisterUser;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/scrapper/Scrapper$LoginType;Lio/github/freewulkanowy/sdk/Sdk$Mode;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/RegisterUser;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/RegisterUser;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/scrapper/Scrapper$LoginType;Lio/github/freewulkanowy/sdk/Sdk$Mode;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/RegisterUser;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getEmail ()Ljava/lang/String;
 	public final fun getLogin ()Ljava/lang/String;
-	public final fun getLoginMode ()Lio/github/wulkanowy/sdk/Sdk$Mode;
-	public final fun getLoginType ()Lio/github/wulkanowy/sdk/scrapper/Scrapper$LoginType;
+	public final fun getLoginMode ()Lio/github/freewulkanowy/sdk/Sdk$Mode;
+	public final fun getLoginType ()Lio/github/freewulkanowy/sdk/scrapper/Scrapper$LoginType;
 	public final fun getScrapperBaseUrl ()Ljava/lang/String;
 	public final fun getSymbols ()Ljava/util/List;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/School {
+public final class io/github/freewulkanowy/sdk/pojo/School {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/School;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/School;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/School;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/School;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/School;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/School;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAddress ()Ljava/lang/String;
 	public final fun getContact ()Ljava/lang/String;
@@ -1085,7 +1085,7 @@ public final class io/github/wulkanowy/sdk/pojo/School {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Semester {
+public final class io/github/freewulkanowy/sdk/pojo/Semester {
 	public fun <init> (IILjava/lang/String;IIILjava/time/LocalDate;Ljava/time/LocalDate;ILjava/lang/String;I)V
 	public final fun component1 ()I
 	public final fun component10 ()Ljava/lang/String;
@@ -1098,8 +1098,8 @@ public final class io/github/wulkanowy/sdk/pojo/Semester {
 	public final fun component7 ()Ljava/time/LocalDate;
 	public final fun component8 ()Ljava/time/LocalDate;
 	public final fun component9 ()I
-	public final fun copy (IILjava/lang/String;IIILjava/time/LocalDate;Ljava/time/LocalDate;ILjava/lang/String;I)Lio/github/wulkanowy/sdk/pojo/Semester;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Semester;IILjava/lang/String;IIILjava/time/LocalDate;Ljava/time/LocalDate;ILjava/lang/String;IILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Semester;
+	public final fun copy (IILjava/lang/String;IIILjava/time/LocalDate;Ljava/time/LocalDate;ILjava/lang/String;I)Lio/github/freewulkanowy/sdk/pojo/Semester;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Semester;IILjava/lang/String;IIILjava/time/LocalDate;Ljava/time/LocalDate;ILjava/lang/String;IILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Semester;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getClassId ()I
 	public final fun getClassName ()Ljava/lang/String;
@@ -1116,7 +1116,7 @@ public final class io/github/wulkanowy/sdk/pojo/Semester {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Sender {
+public final class io/github/freewulkanowy/sdk/pojo/Sender {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
@@ -1124,8 +1124,8 @@ public final class io/github/wulkanowy/sdk/pojo/Sender {
 	public final fun component4 ()Ljava/lang/Integer;
 	public final fun component5 ()Ljava/lang/Integer;
 	public final fun component6 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/Sender;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Sender;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Sender;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/Sender;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Sender;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Sender;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getHash ()Ljava/lang/String;
 	public final fun getId ()Ljava/lang/String;
@@ -1137,44 +1137,44 @@ public final class io/github/wulkanowy/sdk/pojo/Sender {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/SentMessage {
-	public fun <init> (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/Sender;ZI)V
+public final class io/github/freewulkanowy/sdk/pojo/SentMessage {
+	public fun <init> (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/Sender;ZI)V
 	public final fun component1 ()Ljava/util/List;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
-	public final fun component4 ()Lio/github/wulkanowy/sdk/pojo/Sender;
+	public final fun component4 ()Lio/github/freewulkanowy/sdk/pojo/Sender;
 	public final fun component5 ()Z
 	public final fun component6 ()I
-	public final fun copy (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/Sender;ZI)Lio/github/wulkanowy/sdk/pojo/SentMessage;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/SentMessage;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/Sender;ZIILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/SentMessage;
+	public final fun copy (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/Sender;ZI)Lio/github/freewulkanowy/sdk/pojo/SentMessage;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/SentMessage;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/Sender;ZIILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/SentMessage;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getContent ()Ljava/lang/String;
 	public final fun getId ()I
 	public final fun getRecipients ()Ljava/util/List;
-	public final fun getSender ()Lio/github/wulkanowy/sdk/pojo/Sender;
+	public final fun getSender ()Lio/github/freewulkanowy/sdk/pojo/Sender;
 	public final fun getSubject ()Ljava/lang/String;
 	public fun hashCode ()I
 	public final fun isWelcomeMessage ()Z
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/StudentGender : java/lang/Enum {
-	public static final field FEMALE Lio/github/wulkanowy/sdk/pojo/StudentGender;
-	public static final field MALE Lio/github/wulkanowy/sdk/pojo/StudentGender;
+public final class io/github/freewulkanowy/sdk/pojo/StudentGender : java/lang/Enum {
+	public static final field FEMALE Lio/github/freewulkanowy/sdk/pojo/StudentGender;
+	public static final field MALE Lio/github/freewulkanowy/sdk/pojo/StudentGender;
 	public static fun getEntries ()Lkotlin/enums/EnumEntries;
-	public static fun valueOf (Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/StudentGender;
-	public static fun values ()[Lio/github/wulkanowy/sdk/pojo/StudentGender;
+	public static fun valueOf (Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/StudentGender;
+	public static fun values ()[Lio/github/freewulkanowy/sdk/pojo/StudentGender;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/StudentGuardian {
+public final class io/github/freewulkanowy/sdk/pojo/StudentGuardian {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/StudentGuardian;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/StudentGuardian;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/StudentGuardian;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAddress ()Ljava/lang/String;
 	public final fun getEmail ()Ljava/lang/String;
@@ -1185,8 +1185,8 @@ public final class io/github/wulkanowy/sdk/pojo/StudentGuardian {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/StudentInfo {
-	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/StudentGender;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/StudentGuardian;Lio/github/wulkanowy/sdk/pojo/StudentGuardian;)V
+public final class io/github/freewulkanowy/sdk/pojo/StudentInfo {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/StudentGender;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component10 ()Ljava/lang/String;
 	public final fun component11 ()Ljava/lang/String;
@@ -1195,18 +1195,18 @@ public final class io/github/wulkanowy/sdk/pojo/StudentInfo {
 	public final fun component14 ()Ljava/lang/String;
 	public final fun component15 ()Ljava/lang/String;
 	public final fun component16 ()Ljava/lang/String;
-	public final fun component17 ()Lio/github/wulkanowy/sdk/pojo/StudentGuardian;
-	public final fun component18 ()Lio/github/wulkanowy/sdk/pojo/StudentGuardian;
+	public final fun component17 ()Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;
+	public final fun component18 ()Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
 	public final fun component5 ()Ljava/time/LocalDate;
 	public final fun component6 ()Ljava/lang/String;
-	public final fun component7 ()Lio/github/wulkanowy/sdk/pojo/StudentGender;
+	public final fun component7 ()Lio/github/freewulkanowy/sdk/pojo/StudentGender;
 	public final fun component8 ()Z
 	public final fun component9 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/StudentGender;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/StudentGuardian;Lio/github/wulkanowy/sdk/pojo/StudentGuardian;)Lio/github/wulkanowy/sdk/pojo/StudentInfo;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/StudentInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/StudentGender;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/wulkanowy/sdk/pojo/StudentGuardian;Lio/github/wulkanowy/sdk/pojo/StudentGuardian;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/StudentInfo;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/StudentGender;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;)Lio/github/freewulkanowy/sdk/pojo/StudentInfo;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/StudentInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/StudentGender;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/StudentInfo;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAddress ()Ljava/lang/String;
 	public final fun getBirthDate ()Ljava/time/LocalDate;
@@ -1217,9 +1217,9 @@ public final class io/github/wulkanowy/sdk/pojo/StudentInfo {
 	public final fun getFamilyName ()Ljava/lang/String;
 	public final fun getFirstName ()Ljava/lang/String;
 	public final fun getFullName ()Ljava/lang/String;
-	public final fun getGender ()Lio/github/wulkanowy/sdk/pojo/StudentGender;
-	public final fun getGuardianFirst ()Lio/github/wulkanowy/sdk/pojo/StudentGuardian;
-	public final fun getGuardianSecond ()Lio/github/wulkanowy/sdk/pojo/StudentGuardian;
+	public final fun getGender ()Lio/github/freewulkanowy/sdk/pojo/StudentGender;
+	public final fun getGuardianFirst ()Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;
+	public final fun getGuardianSecond ()Lio/github/freewulkanowy/sdk/pojo/StudentGuardian;
 	public final fun getHasPolishCitizenship ()Z
 	public final fun getParentsNames ()Ljava/lang/String;
 	public final fun getPhoneNumber ()Ljava/lang/String;
@@ -1230,23 +1230,23 @@ public final class io/github/wulkanowy/sdk/pojo/StudentInfo {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/StudentPhoto {
+public final class io/github/freewulkanowy/sdk/pojo/StudentPhoto {
 	public fun <init> (Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/StudentPhoto;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/StudentPhoto;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/StudentPhoto;
+	public final fun copy (Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/StudentPhoto;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/StudentPhoto;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/StudentPhoto;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getPhotoBase64 ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Subject {
+public final class io/github/freewulkanowy/sdk/pojo/Subject {
 	public fun <init> (ILjava/lang/String;)V
 	public final fun component1 ()I
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (ILjava/lang/String;)Lio/github/wulkanowy/sdk/pojo/Subject;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Subject;ILjava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Subject;
+	public final fun copy (ILjava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/Subject;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Subject;ILjava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Subject;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getId ()I
 	public final fun getName ()Ljava/lang/String;
@@ -1256,13 +1256,13 @@ public final class io/github/wulkanowy/sdk/pojo/Subject {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Teacher {
+public final class io/github/freewulkanowy/sdk/pojo/Teacher {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/Teacher;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Teacher;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Teacher;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/Teacher;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Teacher;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Teacher;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getName ()Ljava/lang/String;
 	public final fun getShort ()Ljava/lang/String;
@@ -1271,13 +1271,13 @@ public final class io/github/wulkanowy/sdk/pojo/Teacher {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Timetable {
+public final class io/github/freewulkanowy/sdk/pojo/Timetable {
 	public fun <init> (Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 	public final fun component1 ()Ljava/util/List;
 	public final fun component2 ()Ljava/util/List;
 	public final fun component3 ()Ljava/util/List;
-	public final fun copy (Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lio/github/wulkanowy/sdk/pojo/Timetable;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Timetable;Ljava/util/List;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Timetable;
+	public final fun copy (Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lio/github/freewulkanowy/sdk/pojo/Timetable;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Timetable;Ljava/util/List;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Timetable;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getAdditional ()Ljava/util/List;
 	public final fun getHeaders ()Ljava/util/List;
@@ -1286,12 +1286,12 @@ public final class io/github/wulkanowy/sdk/pojo/Timetable {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/TimetableDayHeader {
+public final class io/github/freewulkanowy/sdk/pojo/TimetableDayHeader {
 	public fun <init> (Ljava/time/LocalDate;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/time/LocalDate;
 	public final fun component2 ()Ljava/lang/String;
-	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/TimetableDayHeader;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/TimetableDayHeader;Ljava/time/LocalDate;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/TimetableDayHeader;
+	public final fun copy (Ljava/time/LocalDate;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/TimetableDayHeader;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/TimetableDayHeader;Ljava/time/LocalDate;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/TimetableDayHeader;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getContent ()Ljava/lang/String;
 	public final fun getDate ()Ljava/time/LocalDate;
@@ -1299,14 +1299,14 @@ public final class io/github/wulkanowy/sdk/pojo/TimetableDayHeader {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class io/github/wulkanowy/sdk/pojo/Token {
+public final class io/github/freewulkanowy/sdk/pojo/Token {
 	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 	public final fun component1 ()Ljava/lang/String;
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/wulkanowy/sdk/pojo/Token;
-	public static synthetic fun copy$default (Lio/github/wulkanowy/sdk/pojo/Token;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/wulkanowy/sdk/pojo/Token;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/github/freewulkanowy/sdk/pojo/Token;
+	public static synthetic fun copy$default (Lio/github/freewulkanowy/sdk/pojo/Token;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/github/freewulkanowy/sdk/pojo/Token;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getPin ()Ljava/lang/String;
 	public final fun getQrCodeImage ()Ljava/lang/String;
