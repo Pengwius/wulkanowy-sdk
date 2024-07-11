@@ -108,6 +108,15 @@ internal class MessagesRepository(
         return details
     }
 
+    suspend fun markMessageRead(globalKey: String) {
+        runCatching {
+            loginModule()
+            api.markMessageAsRead(body = mapOf("apiGlobalKey" to globalKey))
+        }
+            .onFailure { logger.error("Error occur while marking message as read", it) }
+            .getOrNull()
+    }
+
     suspend fun sendMessage(subject: String, content: String, recipients: List<String>, senderMailboxId: String) {
         loginModule()
         val body = SendMessageRequest(
