@@ -1,12 +1,14 @@
 package io.github.freewulkanowy.sdk.mapper
 
 import io.github.freewulkanowy.sdk.pojo.CompletedLesson
-import io.github.freewulkanowy.sdk.pojo.Lesson
+import io.github.freewulkanowy.sdk.pojo.Lesson as PojoLesson
 import io.github.freewulkanowy.sdk.pojo.LessonAdditional
 import io.github.freewulkanowy.sdk.pojo.Timetable
 import io.github.freewulkanowy.sdk.pojo.TimetableDayHeader
 import io.github.freewulkanowy.sdk.toLocalDateTime
 import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.LocalTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import io.github.freewulkanowy.sdk.scrapper.timetable.CompletedLesson as ScrapperCompletedLesson
@@ -25,14 +27,14 @@ internal fun ScrapperTimetableFull.mapTimetableFull(zoneId: ZoneId) = Timetable(
     additional = additional.mapTimetableAdditional(zoneId),
 )
 
-// internal fun HebeTimetableFull.mapTimetableFull(zoneId: ZoneId) = Timetable(
-//     headers = headers.mapTimetableDayHeaders(),
-//     lessons = lessons.mapTimetable(zoneId),
-//     additional = additional.mapTimetableAdditional(zoneId),
-// )
+internal fun HebeTimetableFull.mapHebeTimetableFull(zoneId: ZoneId) = Timetable(
+    headers = headers.mapHebeTimetableDayHeaders(),
+    lessons = lessons.mapHebeTimetable(zoneId),
+    additional = additional.mapHebeTimetableAdditional(zoneId),
+)
 
 internal fun List<ScrapperTimetable>.mapTimetable(zoneId: ZoneId) = map {
-    Lesson(
+    PojoLesson(
         canceled = it.canceled,
         changes = it.changes,
         date = it.date,
@@ -51,25 +53,25 @@ internal fun List<ScrapperTimetable>.mapTimetable(zoneId: ZoneId) = map {
     )
 }
 
-// internal fun List<HebeMergedLesson>.mapTimetable(zoneId: ZoneId) = map {
-//     Lesson(
-//         canceled = it.canceled ?: false,
-//         changes = it.changes ?: false,
-//         date = it.date?.date ?: LocalDate.now(),
-//         start = it.timeSlot!!.start.toLocalDateTime("yyyy-MM-dd HH:mm:ss").atZone(zoneId),
-//         end = it.timeSlot!!.end.toLocalDateTime("yyyy-MM-dd HH:mm:ss").atZone(zoneId),
-//         group = it.group?.name ?: "",
-//         info = "${it.reason ?: ""} ${it.teacherAbsenceEffectName ?: ""}",
-//         number = it.timeSlot?.position ?: 0,
-//         room = it.room?.code ?: "",
-//         roomOld = it.roomOld?.code ?: "",
-//         subject = it.subject?.name ?: "Nieznany",
-//         subjectOld = it.subjectOld?.name ?: "Nieznany",
-//         studentPlan = true,
-//         teacher = it.teacherPrimary?.displayName ?: "Nieznany",
-//         teacherOld = it.teacherPrimaryOld?.displayName ?: "Nieznany",
-//     )
-// }
+internal fun List<HebeMergedLesson>.mapHebeTimetable(zoneId: ZoneId) = map {
+    PojoLesson(
+        canceled = it.canceled ?: false,
+        changes = it.changes ?: false,
+        date = it.date?.date ?: LocalDate.now(),
+        start = parseTimeToDateTime(it.timeSlot!!.start).atZone(zoneId),
+        end = parseTimeToDateTime(it.timeSlot!!.end).atZone(zoneId),
+        group = it.group?.name ?: "",
+        info = "${it.reason ?: ""} ${it.teacherAbsenceEffectName ?: ""}",
+        number = it.timeSlot?.position ?: 0,
+        room = it.room?.code ?: "",
+        roomOld = it.roomOld?.code ?: "",
+        subject = it.subject?.name ?: "",
+        subjectOld = it.subjectOld?.name ?: "",
+        studentPlan = true,
+        teacher = it.teacherPrimary?.displayName ?: "",
+        teacherOld = it.teacherPrimaryOld?.displayName ?: "",
+    )
+}
 
 internal fun List<ScrapperTimetableDayHeader>.mapTimetableDayHeaders() = map {
     TimetableDayHeader(
@@ -78,12 +80,12 @@ internal fun List<ScrapperTimetableDayHeader>.mapTimetableDayHeaders() = map {
     )
 }
 
-// internal fun List<HebeTimetableDayHeader>.mapTimetableDayHeaders() = map {
-//     TimetableDayHeader(
-//         date = it.date,
-//         content = it.content,
-//     )
-// }
+internal fun List<HebeTimetableDayHeader>.mapHebeTimetableDayHeaders() = map {
+    TimetableDayHeader(
+        date = it.date,
+        content = it.content,
+    )
+}
 
 internal fun List<ScrapperTimetableAdditional>.mapTimetableAdditional(zoneId: ZoneId) = map {
     LessonAdditional(
@@ -94,14 +96,14 @@ internal fun List<ScrapperTimetableAdditional>.mapTimetableAdditional(zoneId: Zo
     )
 }
 
-// internal fun List<HebeLessonAdditional>.mapTimetableAdditional(zoneId: ZoneId) = map {
-//     LessonAdditional(
-//         subject = it.subject,
-//         date = it.date,
-//         start = it.start.atZone(zoneId),
-//         end = it.end.atZone(zoneId),
-//     )
-// }
+internal fun List<HebeLessonAdditional>.mapHebeTimetableAdditional(zoneId: ZoneId) = map {
+    LessonAdditional(
+        subject = it.subject,
+        date = it.date,
+        start = it.start.atZone(zoneId),
+        end = it.end.atZone(zoneId),
+    )
+}
 
 internal fun List<ScrapperCompletedLesson>.mapCompletedLessons() = map {
     CompletedLesson(
@@ -115,4 +117,10 @@ internal fun List<ScrapperCompletedLesson>.mapCompletedLessons() = map {
         absence = it.absence.orEmpty(),
         resources = it.resources.orEmpty(),
     )
+}
+
+fun parseTimeToDateTime(timeString: String, date: LocalDate = LocalDate.now()): LocalDateTime {
+    val timeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+    val parsedTime = LocalTime.parse(timeString, timeFormatter)
+    return LocalDateTime.of(date, parsedTime)
 }

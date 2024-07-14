@@ -6,13 +6,13 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Subject(
     @SerialName("Id")
-    val id: Int,
+    val id: Int? = null,
     @SerialName("Key")
-    val key: String,
+    val key: String? = null,
     @SerialName("Kod")
-    val kod: String,
+    val kod: String? = null,
     @SerialName("Name")
-    val name: String,
+    val name: String? = null,
     @SerialName("Position")
-    val position: Int,
+    val position: Int? = null,
 )

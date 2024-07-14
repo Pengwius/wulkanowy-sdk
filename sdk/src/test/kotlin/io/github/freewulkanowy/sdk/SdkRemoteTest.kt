@@ -5,10 +5,11 @@ import io.github.freewulkanowy.sdk.pojo.RegisterUser
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Ignore
 import org.junit.Test
+import java.time.LocalDate
 
-@Ignore
 class SdkRemoteTest {
 
     companion object {
@@ -22,9 +23,9 @@ class SdkRemoteTest {
 
     @Test
     fun fullGradesExample() = runTest {
-        val userEmail = "jan@fakelog.cf"
-        val userPassword = "jan123"
-        val host = "https://wulkanowy.net.pl/"
+        val userEmail = ""
+        val userPassword = ""
+        val host = "https://vulcan.net.pl/"
 
         val sdk = Sdk()
         val registerUser: RegisterUser = sdk.getUserSubjectsFromScrapper(
@@ -56,6 +57,61 @@ class SdkRemoteTest {
         grades.details.forEach {
             println("${it.entry} - ${it.date}")
         }
+    }
+
+    @Test
+    fun `get full timetable`() = runTest {
+        val userEmail = ""
+        val userPassword = ""
+        val host = "https://fakelog.cf"
+
+        val sdk = Sdk()
+        val registerUser: RegisterUser = sdk.getUserSubjectsFromScrapper(
+            email = userEmail,
+            password = userPassword,
+            scrapperBaseUrl = host,
+            symbol = "powiatwulkanowy"
+        )
+        val registerSymbol = registerUser.symbols
+            .filter { it.schools.isNotEmpty() }
+            .first { it.schools.all { school -> school != null } }
+        val registerUnit = registerSymbol.schools.first()
+        // val registerStudent = registerUnit.subjects.filterIsInstance<RegisterStudent>().first()
+        // val semester = registerStudent.semesters.last()
+
+        sdk.apply {
+            email = userEmail
+            password = userPassword
+            scrapperBaseUrl = host
+            loginType = Sdk.ScrapperLoginType.valueOf(registerUser.loginType?.name!!)
+
+            symbol = registerSymbol.symbol
+            schoolSymbol = registerUnit.schoolId
+            // studentId = registerStudent.studentId
+            // diaryId = semester.diaryId
+        }
+
+        // println("SCHOOL SYMBOL: ${registerUnit.schoolId}")
+        // println("STUDENT ID: ${registerStudent.studentId}")
+        // println("DIARY ID: ${semester.diaryId}")
+        // println("SYMBOL: ${registerSymbol.symbol}")
+
+        sdk.apply {
+            mode = Sdk.Mode.HYBRID
+        }
+
+        val timetableHebe = sdk.getTimetable(LocalDate.of(2024, 5, 20), LocalDate.of(2024, 5, 27))
+        println(timetableHebe)
+
+        sdk.apply {
+            mode = Sdk.Mode.SCRAPPER
+        }
+
+        val timetableScrapper = sdk.getTimetable(LocalDate.of(2024, 5, 20), LocalDate.of(2024, 5, 28))
+        println(timetableScrapper)
+
+        assertTrue(timetableHebe != null)
+
     }
 
     @Test

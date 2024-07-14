@@ -43,25 +43,25 @@ data class LessonAdditional(
 
 suspend fun mergeTimetable(timetable: List<Lesson>, timetableChanges: List<ChangedLesson>): List<MergedLesson> {
     return timetable.map { lesson ->
-        val change: ChangedLesson? = timetableChanges.find { it.lessonDate == lesson.date && it.id == lesson.id }
+        val change: ChangedLesson? = timetableChanges.find { it.change?.id == lesson.change?.id }
         MergedLesson(
             id = lesson.id,
             timeSlot = lesson.timeSlot,
             date = lesson.date,
             changeDate = change?.changeDate,
-            subject = change?.subject,
+            subject = change?.subject ?: lesson.subject ?: Subject(name = change?.teacherAbsenceEffectName ?: change?.event ?: change?.reason ?: lesson.event),
             subjectOld = lesson.subject,
             group = lesson.distribution,
-            room = change?.room,
+            room = change?.room ?: lesson.room,
             roomOld = lesson.room,
-            teacherPrimary = change?.teacherPrimary,
-            teacherSecondary = change?.teacherSecondary,
-            teacherPrimaryOld = lesson.teacherPrimary,
-            teacherSecondaryOld = lesson.teacherSecondary,
+            teacherPrimary = change?.teacherPrimary ?: lesson.teacherPrimary,
+            teacherSecondary = change?.teacherSecondary ?: lesson.teacherSecondary,
+            teacherPrimaryOld = if (change != null) lesson.teacherPrimary else null,
+            teacherSecondaryOld = if (change != null) lesson.teacherSecondary else null,
             teacherAbsenceEffectName = change?.teacherAbsenceEffectName,
             reason = change?.reason,
             changes = (change != null),
-            canceled = false,
+            canceled = change?.classAbsence,
         )
     }
 }

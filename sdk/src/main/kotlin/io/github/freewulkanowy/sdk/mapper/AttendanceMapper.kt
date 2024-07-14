@@ -3,6 +3,7 @@ package io.github.freewulkanowy.sdk.mapper
 import io.github.freewulkanowy.sdk.pojo.Absent
 import io.github.freewulkanowy.sdk.pojo.Attendance
 import io.github.freewulkanowy.sdk.pojo.AttendanceSummary
+import io.github.freewulkanowy.sdk.scrapper.attendance.AttendanceCategory
 import io.github.freewulkanowy.sdk.scrapper.attendance.AttendanceCategory.ABSENCE_EXCUSED
 import io.github.freewulkanowy.sdk.scrapper.attendance.AttendanceCategory.ABSENCE_FOR_SCHOOL_REASONS
 import io.github.freewulkanowy.sdk.scrapper.attendance.AttendanceCategory.ABSENCE_UNEXCUSED
@@ -53,9 +54,9 @@ internal fun List<ScrapperAttendanceSummary>.mapAttendanceSummary() = map {
 @JvmName("mapHebeAttendance")
 internal fun List<HebeAttendance>.mapAttendance() = map {
     Attendance(
-        number = it.lessonNumber ?: 0,
-        name = it.presenceType?.name ?: "Nieznany",
-        subject = it.subject?.name ?: "Nieznany",
+        number = it.time?.position ?: 0,
+        name = AttendanceCategory.getCategoryById(it.presenceType?.categoryId ?: 0).name,
+        subject = it.subject?.name ?: it.topic ?: "Nieznany",
         date = it.date?.date ?: LocalDate.of(2137, 6, 9),
         timeId = it.time?.id ?: 0,
         categoryId = it.presenceType?.id ?: 0,

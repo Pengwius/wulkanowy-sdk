@@ -12,6 +12,7 @@ import io.github.freewulkanowy.sdk.mapper.mapGradePointsStatistics
 import io.github.freewulkanowy.sdk.mapper.mapGradeStatistics
 import io.github.freewulkanowy.sdk.mapper.mapGrades
 import io.github.freewulkanowy.sdk.mapper.mapGradesSemesterStatistics
+import io.github.freewulkanowy.sdk.mapper.mapHebeTimetableFull
 import io.github.freewulkanowy.sdk.mapper.mapHebeUser
 import io.github.freewulkanowy.sdk.mapper.mapHomework
 import io.github.freewulkanowy.sdk.mapper.mapLastAnnouncements
@@ -366,10 +367,10 @@ class Sdk {
         email: String,
         password: String,
         scrapperBaseUrl: String,
-        startSymbol: String = "Default",
-        firebaseToken: String? = null,
+        domainSuffix: String,
+        symbol: String,
     ): RegisterUser = withContext(Dispatchers.IO) {
-        val scrapperUser = getUserSubjectsFromScrapper(email, password, scrapperBaseUrl, startSymbol)
+        val scrapperUser = getUserSubjectsFromScrapper(email, password, scrapperBaseUrl, domainSuffix, symbol)
         scrapperUser.copy(
             loginMode = Mode.HYBRID,
             symbols = scrapperUser.symbols
@@ -392,7 +393,7 @@ class Sdk {
                         token = token.token,
                         pin = token.pin,
                         symbol = token.symbol,
-                        firebaseToken = firebaseToken,
+                        firebaseToken = "",
                     )
                     symbol.copy(
                         keyId = hebeUser.symbols.first().keyId,
@@ -655,9 +656,8 @@ class Sdk {
 
     suspend fun getTimetable(start: LocalDate, end: LocalDate): Timetable = withContext(Dispatchers.IO) {
         when (mode) {
-            Mode.HYBRID, Mode.SCRAPPER -> scrapper.getTimetable(start, end).mapTimetableFull(registerTimeZone)
-            // Mode.HYBRID, Mode.HEBE -> hebe.getMergedTimetable(start, end).mapTimetableFull(registerTimeZone)
-            Mode.HEBE -> throw NotImplementedError("Not available in HEBE mode")
+            Mode.SCRAPPER -> scrapper.getTimetable(start, end).mapTimetableFull(registerTimeZone)
+            Mode.HYBRID, Mode.HEBE -> hebe.getMergedTimetable(start, end).mapHebeTimetableFull(registerTimeZone)
         }
     }
 

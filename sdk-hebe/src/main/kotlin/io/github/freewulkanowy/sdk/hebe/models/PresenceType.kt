@@ -12,9 +12,9 @@ data class PresenceType(
     @SerialName("Symbol")
     val symbol: String?,
     @SerialName("CategoryId")
-    val category_id: Int?,
+    val categoryId: Int?,
     @SerialName("CategoryName")
-    val category_name: String?,
+    val categoryName: String?,
     @SerialName("Position")
     val position: Int?,
     @SerialName("Presence")
