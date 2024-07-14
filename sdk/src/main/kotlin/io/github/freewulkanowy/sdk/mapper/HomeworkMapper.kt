@@ -29,7 +29,7 @@ internal fun List<HebeHomework>.mapHomework() = map {
             .mapNotNull { it.firstOrNull()?.uppercase() }
             .joinToString(""),
         content = it.content,
-        subject = it.subject.name,
+        subject = it.subject.name ?: "Nieznany",
         entryDate = it.dateCreated.date,
         attachments = it.attachments.map { (url, name) ->
             HomeworkAttachment(url, name)

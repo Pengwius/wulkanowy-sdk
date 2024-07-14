@@ -65,7 +65,7 @@ internal fun List<ScrapperGradeDescriptive>.mapDescriptive() = map {
 internal fun Triple<List<HebeGrade>, List<HebeGradeSummary>, List<HebeGradeAverage>>.mapGrades() = Grades(
     details = first.map { grade ->
         Grade(
-            subject = grade.column.subject.name,
+            subject = grade.column.subject.name ?: "Nieznany",
             entry = grade.content,
             value = grade.value ?: 0.0,
             modifier = 0.0,
@@ -81,7 +81,7 @@ internal fun Triple<List<HebeGrade>, List<HebeGradeSummary>, List<HebeGradeAvera
     },
     summary = second.map { summary ->
         GradeSummary(
-            name = summary.subject.name,
+            name = summary.subject.name ?: "Nieznany",
             average = third.find { it.id == summary.id }
                 ?.average?.replace(",", ".")
                 ?.toDoubleOrNull() ?: .0,
