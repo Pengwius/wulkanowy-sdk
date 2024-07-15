@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class LessonRoom(
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Code")
-    val code: String,
+    val code: String?,
 )

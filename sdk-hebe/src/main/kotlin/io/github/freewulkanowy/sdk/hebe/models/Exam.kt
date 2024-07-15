@@ -6,23 +6,23 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Exam(
     @SerialName("Content")
-    val content: String,
+    val content: String?,
     @SerialName("Creator")
-    val creator: Teacher,
+    val creator: Teacher?,
     @SerialName("DateCreated")
-    val dateCreated: Date,
+    val dateCreated: Date?,
     @SerialName("DateModify")
-    val dateModify: Date,
+    val dateModify: Date?,
     @SerialName("Deadline")
     val deadline: Date,
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Key")
-    val key: String,
+    val key: String?,
     @SerialName("PupilId")
-    val pupilId: Int,
+    val pupilId: Int?,
     @SerialName("Subject")
-    val subject: Subject,
+    val subject: Subject?,
     @SerialName("Type")
-    val type: String,
+    val type: String?,
 )

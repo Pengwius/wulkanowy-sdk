@@ -6,9 +6,9 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class MessageBox(
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("GlobalKey")
-    val globalKey: String,
+    val globalKey: String?,
     @SerialName("Name")
-    val name: String,
+    val name: String?,
 )

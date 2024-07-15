@@ -208,6 +208,7 @@ class Hebe {
         )
 
         val mergedLessons = mergeTimetable(timetable, timetableChanges)
+            .filter { it.visible ?: true }
 
         return generateDayHeadersAndAdditionals(mergedLessons)
     }

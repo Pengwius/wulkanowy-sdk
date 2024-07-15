@@ -8,7 +8,7 @@ import java.time.LocalDate
 @Serializable
 data class LuckyNumber(
     @SerialName("Day")
-    val day: String,
+    val day: String?,
     @SerialName("Number")
-    val number: String,
+    val number: String?,
 )

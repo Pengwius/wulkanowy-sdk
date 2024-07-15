@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class GradeSummary(
     @SerialName("DateModify")
-    val dateModify: Date,
+    val dateModify: Date?,
     @SerialName("Entry_1")
     val entry1: String? = null,
     @SerialName("Entry_2")
@@ -14,11 +14,11 @@ data class GradeSummary(
     // @SerialName("Entry_3")
     // val entry3: Any?,
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("PeriodId")
-    val periodId: Int,
+    val periodId: Int?,
     @SerialName("PupilId")
-    val pupilId: Int,
+    val pupilId: Int?,
     @SerialName("Subject")
-    val subject: Subject,
+    val subject: Subject?,
 )

@@ -27,6 +27,7 @@ data class MergedLesson(
     val teacherAbsenceEffectName: String?,
     val changes: Boolean?,
     val canceled: Boolean?,
+    val visible: Boolean?,
 )
 
 data class TimetableDayHeader(
@@ -62,6 +63,7 @@ suspend fun mergeTimetable(timetable: List<Lesson>, timetableChanges: List<Chang
             reason = change?.reason,
             changes = (change != null),
             canceled = change?.classAbsence,
+            visible = lesson.visible
         )
     }
 }

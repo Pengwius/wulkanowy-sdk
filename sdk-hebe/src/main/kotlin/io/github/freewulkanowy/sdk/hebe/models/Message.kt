@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Message(
     @SerialName("Id")
-    val id: String,
+    val id: String?,
     @SerialName("GlobalKey")
     val globalKey: String?,
     @SerialName("ThreadKey")

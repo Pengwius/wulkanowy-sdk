@@ -65,23 +65,23 @@ internal fun List<ScrapperGradeDescriptive>.mapDescriptive() = map {
 internal fun Triple<List<HebeGrade>, List<HebeGradeSummary>, List<HebeGradeAverage>>.mapGrades() = Grades(
     details = first.map { grade ->
         Grade(
-            subject = grade.column.subject.name ?: "Nieznany",
-            entry = grade.content,
+            subject = grade.column?.subject?.name ?: "Nieznany",
+            entry = grade.content ?: "Nieznany",
             value = grade.value ?: 0.0,
             modifier = 0.0,
-            weight = String.format("%.2f", grade.column.weight),
-            weightValue = grade.column.weight,
-            comment = grade.comment,
-            symbol = grade.column.code,
-            description = grade.column.name,
-            color = grade.column.color.toString(16).uppercase(),
-            teacher = "${grade.creator.name} ${grade.creator.surname}",
-            date = LocalDate.parse(grade.dateCreated.date.toString(), DateTimeFormatter.ofPattern("yyyy-MM-dd")),
+            weight = String.format("%.2f", grade.column?.weight),
+            weightValue = grade.column?.weight ?: 0.0,
+            comment = grade.comment ?: "Nieznany",
+            symbol = grade.column?.code ?: "Nieznany",
+            description = grade.column?.name ?: "Nieznany",
+            color = grade.column?.color?.toString(16)?.uppercase() ?: "FFFFFF",
+            teacher = "${grade.creator?.name} ${grade.creator?.surname}",
+            date = LocalDate.parse(grade.dateCreated?.date.toString(), DateTimeFormatter.ofPattern("yyyy-MM-dd")),
         )
     },
     summary = second.map { summary ->
         GradeSummary(
-            name = summary.subject.name ?: "Nieznany",
+            name = summary.subject?.name ?: "Nieznany",
             average = third.find { it.id == summary.id }
                 ?.average?.replace(",", ".")
                 ?.toDoubleOrNull() ?: .0,

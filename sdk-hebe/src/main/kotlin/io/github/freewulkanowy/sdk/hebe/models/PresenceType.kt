@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class PresenceType(
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Name")
     val name: String?,
     @SerialName("Symbol")

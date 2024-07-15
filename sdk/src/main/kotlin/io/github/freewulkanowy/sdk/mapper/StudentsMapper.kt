@@ -11,6 +11,7 @@ import io.github.freewulkanowy.sdk.pojo.RegisterUnit
 import io.github.freewulkanowy.sdk.pojo.RegisterUser
 import io.github.freewulkanowy.sdk.pojo.Semester
 import io.github.freewulkanowy.sdk.toLocalDate
+import java.time.LocalDate
 import io.github.freewulkanowy.sdk.scrapper.register.RegisterEmployee as ScrapperRegisterEmploye
 import io.github.freewulkanowy.sdk.scrapper.register.RegisterStudent as ScrapperRegisterStudent
 import io.github.freewulkanowy.sdk.scrapper.register.RegisterSubject as ScrapperRegisterSubject
@@ -86,7 +87,7 @@ fun List<StudentInfo>.mapHebeUser(
         .groupBy { it.topLevelPartition }
         .mapNotNull { (symbol, students) ->
             RegisterSymbol(
-                symbol = symbol,
+                symbol = symbol ?: "Default",
                 error = null,
                 keyId = device.certificateHash,
                 privatePem = device.privatePem,
@@ -99,44 +100,44 @@ fun List<StudentInfo>.mapHebeUser(
 
 private fun List<StudentInfo>.mapUnit(): List<RegisterUnit> {
     return this
-        .groupBy { it.unit.symbol }
+        .groupBy { it.unit?.symbol }
         .mapNotNull { (schoolId, students) ->
             val firstStudent = students.firstOrNull() ?: return@mapNotNull null
             RegisterUnit(
-                userLoginId = firstStudent.login.id,
-                schoolId = schoolId,
-                schoolName = firstStudent.constituentUnit.name,
-                schoolShortName = firstStudent.constituentUnit.short,
+                userLoginId = firstStudent.login?.id ?: 0,
+                schoolId = schoolId ?: "00000",
+                schoolName = firstStudent.constituentUnit?.name ?: "Nieznany",
+                schoolShortName = firstStudent.constituentUnit?.short ?: "Nieznany",
                 parentIds = listOf(),
                 studentIds = listOf(),
                 employeeIds = listOf(),
                 error = null,
                 subjects = students.map { student ->
                     RegisterStudent(
-                        studentId = student.pupil.id,
-                        studentName = student.pupil.let { pupil -> "${pupil.firstName} ${pupil.surname}" },
-                        studentSecondName = student.pupil.secondName,
-                        studentSurname = student.pupil.surname,
-                        className = student.classDisplay,
+                        studentId = student.pupil?.id ?: 0,
+                        studentName = student.pupil.let { pupil -> "${pupil?.firstName} ${pupil?.surname}" },
+                        studentSecondName = student.pupil?.secondName ?: "Nieznany",
+                        studentSurname = student.pupil?.surname ?: "Nieznany",
+                        className = student.classDisplay ?: "Nieznany",
                         classId = -1, // todo
-                        isParent = student.login.loginRole != "Uczen",
+                        isParent = student.login?.loginRole != "Uczen",
                         isAuthorized = true,
                         isEduOne = false,
-                        semesters = student.periods.map { period ->
+                        semesters = student.periods?.map { period ->
                             Semester(
-                                diaryId = student.journal.id,
+                                diaryId = student.journal?.id ?: 0,
                                 kindergartenDiaryId = 0,
-                                diaryName = student.classDisplay,
-                                schoolYear = period.start.timestamp.toLocalDate().year,
-                                semesterId = period.id,
-                                semesterNumber = period.number,
-                                start = period.start.timestamp.toLocalDate(),
-                                end = period.end.timestamp.toLocalDate(),
+                                diaryName = student.classDisplay ?: "Nieznany",
+                                schoolYear = period?.start?.timestamp?.toLocalDate()?.year ?: 0,
+                                semesterId = period?.id ?: 0,
+                                semesterNumber = period?.number ?: 0,
+                                start = period?.start?.timestamp?.toLocalDate() ?: LocalDate.parse("1970-1-1"),
+                                end = period?.end?.timestamp?.toLocalDate() ?: LocalDate.parse("1970-1-1"),
                                 classId = -1, // todo
                                 className = student.classDisplay,
-                                unitId = student.unit.id, // todo: is needed?
+                                unitId = student.unit?.id ?: 0, // todo: is needed?
                             )
-                        },
+                        } ?: emptyList(),
                     )
                 },
             )

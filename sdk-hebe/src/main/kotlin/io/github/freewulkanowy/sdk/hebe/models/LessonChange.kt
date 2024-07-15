@@ -6,9 +6,9 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class LessonChange(
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Type")
-    val type: Int,
+    val type: Int?,
     @SerialName("Separation")
-    val separation: Boolean,
+    val separation: Boolean?,
 )

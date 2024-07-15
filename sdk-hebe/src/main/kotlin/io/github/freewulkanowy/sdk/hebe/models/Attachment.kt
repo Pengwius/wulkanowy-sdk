@@ -6,8 +6,8 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Attachment(
     @SerialName("Name")
-    val name: String,
+    val name: String?,
     @SerialName("Link")
-    val link: String,
+    val link: String?,
 )
 

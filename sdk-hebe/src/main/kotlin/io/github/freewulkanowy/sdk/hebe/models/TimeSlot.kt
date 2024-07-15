@@ -6,14 +6,14 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class TimeSlot(
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Start")
-    val start: String,
+    val start: String?,
     @SerialName("End")
-    val end: String,
+    val end: String?,
     @SerialName("Display")
-    val display: String,
+    val display: String?,
     @SerialName("Position")
-    val position: Int,
+    val position: Int?,
 )
 

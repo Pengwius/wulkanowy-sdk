@@ -1,6 +1,7 @@
 package io.github.freewulkanowy.sdk.mapper
 
 import io.github.freewulkanowy.sdk.pojo.Exam
+import java.time.LocalDate
 import io.github.freewulkanowy.sdk.hebe.models.Exam as HebeExam
 import io.github.freewulkanowy.sdk.scrapper.exams.Exam as ScrapperExam
 
@@ -21,11 +22,11 @@ internal fun List<ScrapperExam>.mapExams() = map {
 internal fun List<HebeExam>.mapExams() = map {
     Exam(
         date = it.deadline.date,
-        entryDate = it.dateCreated.date,
-        description = it.content,
-        subject = it.subject.name ?: "Nieznany",
-        teacher = it.creator.displayName,
+        entryDate = it.dateCreated?.date ?: LocalDate.parse("1970-1-1"),
+        description = it.content ?: "Nieznany",
+        subject = it.subject?.name ?: "Nieznany",
+        teacher = it.creator?.displayName ?: "Nieznany",
         teacherSymbol = "",
-        type = it.type,
+        type = it.type ?: "Nieznany",
     )
 }

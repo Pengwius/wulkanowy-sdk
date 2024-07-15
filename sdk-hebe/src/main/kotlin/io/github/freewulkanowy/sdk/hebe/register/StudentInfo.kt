@@ -7,120 +7,120 @@ import kotlinx.serialization.Serializable
 class StudentInfo(
 
     @SerialName("Capabilities")
-    val capabilities: List<String>,
+    val capabilities: List<String?>?,
 
     @SerialName("ClassDisplay")
-    val classDisplay: String,
+    val classDisplay: String?,
 
     @SerialName("ConstituentUnit")
-    val constituentUnit: ConstituentUnit,
+    val constituentUnit: ConstituentUnit?,
 
     @SerialName("Educators")
-    val educators: List<Educator>,
+    val educators: List<Educator?>?,
 
     @SerialName("FullSync")
-    val fullSync: Boolean,
+    val fullSync: Boolean?,
 
     @SerialName("InfoDisplay")
-    val infoDisplay: String,
+    val infoDisplay: String?,
 
     @SerialName("Journal")
-    val journal: Journal,
+    val journal: Journal?,
 
     @SerialName("Login")
-    val login: Login,
+    val login: Login?,
 
     @SerialName("Partition")
-    val partition: String,
+    val partition: String?,
 
     @SerialName("Periods")
-    val periods: List<Period>,
+    val periods: List<Period?>?,
 
     @SerialName("Pupil")
-    val pupil: Pupil,
+    val pupil: Pupil?,
 
     @SerialName("SenderEntry")
     val senderEntry: SenderEntry?,
 
     @SerialName("TopLevelPartition")
-    val topLevelPartition: String,
+    val topLevelPartition: String?,
 
     @SerialName("Unit")
-    val unit: Unit,
+    val unit: Unit?,
 ) {
 
     @Serializable
     data class ConstituentUnit(
 
         @SerialName("Address")
-        val address: String,
+        val address: String?,
 
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
 
         @SerialName("Name")
-        val name: String,
+        val name: String?,
 
         @SerialName("Patron")
         val patron: String?,
 
         @SerialName("SchoolTopic")
-        val schoolTopic: String,
+        val schoolTopic: String?,
 
         @SerialName("Short")
-        val short: String,
+        val short: String?,
     )
 
     @Serializable
     data class Educator(
 
         @SerialName("Id")
-        val id: String,
+        val id: String?,
 
         @SerialName("Initials")
-        val initials: String,
+        val initials: String?,
 
         @SerialName("LoginId")
-        val loginId: Int,
+        val loginId: Int?,
 
         @SerialName("Name")
-        val name: String,
+        val name: String?,
 
         @SerialName("Surname")
-        val surname: String,
+        val surname: String?,
 
         @SerialName("Roles")
-        val roles: List<Role>,
+        val roles: List<Role?>?,
     ) {
         @Serializable
         data class Role(
 
             @SerialName("Address")
-            val address: String,
+            val address: String?,
 
             @SerialName("AddressHash")
-            val addressHash: String,
+            val addressHash: String?,
 
             @SerialName("ClassSymbol")
-            val classSymbol: String,
+            val classSymbol: String?,
 
             @SerialName("ConstituentUnitSymbol")
-            val constituentUnitSymbol: String,
+            val constituentUnitSymbol: String?,
 
             @SerialName("Initials")
-            val initials: String,
+            val initials: String?,
 
             @SerialName("Name")
-            val name: String,
+            val name: String?,
 
             @SerialName("RoleName")
-            val roleName: String,
+            val roleName: String?,
 
             @SerialName("RoleOrder")
-            val roleOrder: Int,
+            val roleOrder: Int?,
 
             @SerialName("Surname")
-            val surname: String,
+            val surname: String?,
 
             @SerialName("UnitSymbol")
             val unitSymbol: String? = null,
@@ -131,86 +131,86 @@ class StudentInfo(
     data class Journal(
 
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
 
         @SerialName("YearStart")
-        val yearStart: PeriodDate,
+        val yearStart: PeriodDate?,
 
         @SerialName("YearEnd")
-        val yearEnd: PeriodDate,
+        val yearEnd: PeriodDate?,
     )
 
     @Serializable
     data class PeriodDate(
 
         @SerialName("Date")
-        val date: String,
+        val date: String?,
 
         @SerialName("DateDisplay")
-        val dateDisplay: String,
+        val dateDisplay: String?,
 
         @SerialName("Time")
-        val time: String,
+        val time: String?,
 
         @SerialName("Timestamp")
-        val timestamp: Long,
+        val timestamp: Long?,
     )
 
     @Serializable
     data class Login(
 
         @SerialName("DisplayName")
-        val displayName: String,
+        val displayName: String?,
 
         @SerialName("FirstName")
-        val firstName: String,
+        val firstName: String?,
 
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
 
         @SerialName("LoginRole")
-        val loginRole: String,
+        val loginRole: String?,
 
         @SerialName("SecondName")
         val secondName: String?,
 
         @SerialName("Surname")
-        val surname: String,
+        val surname: String?,
 
         @SerialName("Value")
-        val value: String,
+        val value: String?,
     )
 
     @Serializable
     data class Period(
 
         @SerialName("Current")
-        val current: Boolean,
+        val current: Boolean?,
 
         @SerialName("End")
-        val end: PeriodDate,
+        val end: PeriodDate?,
 
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
 
         @SerialName("Last")
-        val last: Boolean,
+        val last: Boolean?,
 
         @SerialName("Level")
-        val level: Int,
+        val level: Int?,
 
         @SerialName("Number")
-        val number: Int,
+        val number: Int?,
 
         @SerialName("Start")
-        val start: PeriodDate,
+        val start: PeriodDate?,
     )
 
     @Serializable
     data class Pupil(
 
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
 
         @SerialName("LoginId")
         val loginId: Int = -1,
@@ -219,59 +219,59 @@ class StudentInfo(
         val loginValue: String? = null,
 
         @SerialName("FirstName")
-        val firstName: String,
+        val firstName: String?,
 
         @SerialName("SecondName")
         val secondName: String = "",
 
         @SerialName("Surname")
-        val surname: String,
+        val surname: String?,
 
         @SerialName("Sex")
-        val sex: Boolean,
+        val sex: Boolean?,
     )
 
     @Serializable
     data class SenderEntry(
 
         @SerialName("Address")
-        val address: String,
+        val address: String?,
 
         @SerialName("AddressHash")
-        val addressHash: String,
+        val addressHash: String?,
 
         @SerialName("Initials")
-        val initials: String,
+        val initials: String?,
 
         @SerialName("LoginId")
-        val loginId: Int,
+        val loginId: Int?,
     )
 
     @Serializable
     data class Unit(
 
         @SerialName("Address")
-        val address: String,
+        val address: String?,
 
         @SerialName("DisplayName")
-        val displayName: String,
+        val displayName: String?,
 
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
 
         @SerialName("Name")
-        val name: String,
+        val name: String?,
 
         @SerialName("Patron")
         val patron: String?,
 
         @SerialName("RestURL")
-        val restUrl: String,
+        val restUrl: String?,
 
         @SerialName("Short")
-        val short: String,
+        val short: String?,
 
         @SerialName("Symbol")
-        val symbol: String,
+        val symbol: String?,
     )
 }

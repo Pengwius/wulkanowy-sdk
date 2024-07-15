@@ -6,31 +6,31 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Grade(
     @SerialName("Column")
-    val column: Column,
+    val column: Column?,
     @SerialName("Comment")
-    val comment: String,
+    val comment: String?,
     @SerialName("Content")
-    val content: String,
+    val content: String?,
     @SerialName("ContentRaw")
-    val contentRaw: String,
+    val contentRaw: String?,
     @SerialName("Creator")
-    val creator: Teacher,
+    val creator: Teacher?,
     @SerialName("DateCreated")
-    val dateCreated: Date,
+    val dateCreated: Date?,
     @SerialName("DateModify")
-    val dateModify: Date,
+    val dateModify: Date?,
     // @SerialName("Denominator")
     // val denominator: Any?,
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Key")
-    val key: String,
+    val key: String?,
     @SerialName("Modifier")
-    val modifier: Modifier,
+    val modifier: Modifier?,
     // @SerialName("Numerator")
     // val numerator: Any?,
     @SerialName("PupilId")
-    val pupilId: Int,
+    val pupilId: Int?,
     @SerialName("Value")
     val value: Double? = null,
 ) {
@@ -39,46 +39,46 @@ data class Grade(
         @SerialName("Category")
         val category: Category? = null,
         @SerialName("Code")
-        val code: String,
+        val code: String?,
         @SerialName("Color")
-        val color: Int,
+        val color: Int?,
         @SerialName("Group")
         val group: String? = null,
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
         @SerialName("Key")
-        val key: String,
+        val key: String?,
         @SerialName("Name")
-        val name: String,
+        val name: String?,
         @SerialName("Number")
-        val number: Int,
+        val number: Int?,
         @SerialName("PeriodId")
-        val periodId: Int,
+        val periodId: Int?,
         @SerialName("Subject")
-        val subject: Subject,
+        val subject: Subject?,
         @SerialName("Weight")
-        val weight: Double,
+        val weight: Double?,
     ) {
         @Serializable
         data class Category(
             @SerialName("Code")
-            val code: String,
+            val code: String?,
             @SerialName("Id")
-            val id: Int,
+            val id: Int?,
             @SerialName("Name")
-            val name: String,
+            val name: String?,
         )
     }
 
     @Serializable
     data class Modifier(
         @SerialName("DisplayName")
-        val displayName: String,
+        val displayName: String?,
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
         @SerialName("Name")
-        val name: String,
+        val name: String?,
         @SerialName("Surname")
-        val surname: String,
+        val surname: String?,
     )
 }

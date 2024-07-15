@@ -6,29 +6,29 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class GradeAverage(
     @SerialName("Average")
-    val average: String,
+    val average: String?,
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("PeriodId")
-    val periodId: Int,
+    val periodId: Int?,
     // @SerialName("Points")
     // val points: Any?,
     @SerialName("PupilId")
-    val pupilId: Int,
+    val pupilId: Int?,
     @SerialName("Subject")
-    val subject: Subject,
+    val subject: Subject?,
 ) {
     @Serializable
     data class Subject(
         @SerialName("Id")
-        val id: Int,
+        val id: Int?,
         @SerialName("Key")
-        val key: String,
+        val key: String?,
         @SerialName("Kod")
-        val kod: String,
+        val kod: String?,
         @SerialName("Name")
-        val name: String,
+        val name: String?,
         @SerialName("Position")
-        val position: Int,
+        val position: Int?,
     )
 }

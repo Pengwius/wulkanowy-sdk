@@ -6,25 +6,25 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Homework(
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Key")
-    val key: String,
+    val key: String?,
     @SerialName("IdHomework")
-    val homeworkId: Int,
+    val homeworkId: Int?,
     @SerialName("Content")
-    val content: String,
+    val content: String?,
     @SerialName("DateCreated")
-    val dateCreated: Date,
+    val dateCreated: Date?,
     @SerialName("Creator")
-    val creator: Teacher,
+    val creator: Teacher?,
     @SerialName("Subject")
-    val subject: Subject,
+    val subject: Subject?,
     @SerialName("Attachments")
-    val attachments: List<Attachment>,
+    val attachments: List<Attachment>?,
     @SerialName("IsAnswerRequired")
-    val isAnswerRequired: Boolean,
+    val isAnswerRequired: Boolean?,
     @SerialName("Deadline")
-    val deadline: Date,
+    val deadline: Date?,
     @SerialName("AnswerDeadline")
     val answerDeadline: Date?,
     @SerialName("AnswerDate")

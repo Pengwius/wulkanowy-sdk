@@ -6,11 +6,11 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class TeamClass(
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Key")
-    val key: String,
+    val key: String?,
     @SerialName("DisplayName")
-    val displayName: String,
+    val displayName: String?,
     @SerialName("Symbol")
-    val symbol: String,
+    val symbol: String?,
 )

@@ -6,12 +6,12 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Teacher(
     @SerialName("DisplayName")
-    val displayName: String,
+    val displayName: String?,
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Name")
-    val name: String,
+    val name: String?,
     @SerialName("Surname")
-    val surname: String,
+    val surname: String?,
 )
 

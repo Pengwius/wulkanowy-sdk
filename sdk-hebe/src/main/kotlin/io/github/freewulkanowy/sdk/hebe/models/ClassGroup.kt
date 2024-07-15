@@ -6,13 +6,13 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class ClassGroup(
     @SerialName("Id")
-    val id: Int,
+    val id: Int?,
     @SerialName("Key")
-    val key: String,
+    val key: String?,
     @SerialName("Shortcut")
-    val shortcut: String,
+    val shortcut: String?,
     @SerialName("Name")
-    val name: String,
+    val name: String?,
     @SerialName("PartType")
-    val partType: String,
+    val partType: String?,
 )
