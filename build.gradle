@@ -48,6 +48,7 @@ allprojects {
 
     dependencies {
         implementation "org.slf4j:slf4j-api:$slf4j"
+        implementation "io.github.cdimascio:java-dotenv:5.2.2"
         testImplementation "org.slf4j:slf4j-simple:$slf4j"
 
         implementation platform(libs.okhttp.bom)

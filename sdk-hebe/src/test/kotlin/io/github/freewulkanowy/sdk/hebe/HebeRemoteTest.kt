@@ -15,6 +15,7 @@ import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 import java.util.UUID
 import kotlin.reflect.typeOf
+import io.github.cdimascio.dotenv.dotenv
 
 class HebeRemoteTest {
 
@@ -22,19 +23,27 @@ class HebeRemoteTest {
 
     @Before
     fun setUp() {
+        val dotenv = dotenv {
+            directory = System.getProperty("user.dir") + "/src/test/kotlin/io/github/freewulkanowy/sdk/hebe"
+            ignoreIfMalformed = true
+            ignoreIfMissing = true
+        }
+
         with(hebe) {
             logLevel = HttpLoggingInterceptor.Level.BODY
-            keyId = "///"
-            privatePem = "///"
-            baseUrl = "https://lekcjaplus.vulcan.net.pl/nowysacz"
-            pupilId = 0
-            schoolId = "00000"
-            loginId = 0
+            keyId = dotenv["KEY_ID"] ?: ""
+            privatePem = dotenv["PRIVATE_PEM"] ?: ""
+            baseUrl = dotenv["BASE_URL"] ?: ""
+            pupilId = dotenv["PUPIL_ID"]?.toInt() ?: 0
+            schoolId = dotenv["SCHOOL_ID"] ?: ""
+            loginId = dotenv["LOGIN_ID"]?.toInt() ?: 0
             /*
                 wszystko znajdziesz gdzieś tam w logach
              */
             deviceModel = "Freewulkanowy"
         }
+
+        print(hebe.baseUrl)
     }
 
     @Ignore
@@ -179,5 +188,12 @@ class HebeRemoteTest {
         val response = hebe.sendMessage(payload)
         print(response)
         assertTrue(response.sender?.globalKey == "") //tu daj swój global key
+    }
+
+    @Test
+    fun `get notes`() = runTest {
+        val notes = hebe.getNotes()
+        print(notes)
+        assertTrue(notes.isNotEmpty())
     }
 }

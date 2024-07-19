@@ -12,6 +12,7 @@ import io.github.freewulkanowy.sdk.mapper.mapGradePointsStatistics
 import io.github.freewulkanowy.sdk.mapper.mapGradeStatistics
 import io.github.freewulkanowy.sdk.mapper.mapGrades
 import io.github.freewulkanowy.sdk.mapper.mapGradesSemesterStatistics
+import io.github.freewulkanowy.sdk.mapper.mapHebeNotes
 import io.github.freewulkanowy.sdk.mapper.mapHebeTimetableFull
 import io.github.freewulkanowy.sdk.mapper.mapHebeUser
 import io.github.freewulkanowy.sdk.mapper.mapHomework
@@ -501,8 +502,8 @@ class Sdk {
 
     suspend fun getNotes(): List<Note> = withContext(Dispatchers.IO) {
         when (mode) {
-            Mode.HYBRID, Mode.SCRAPPER -> scrapper.getNotes().mapNotes()
-            Mode.HEBE -> throw NotImplementedError("Not available in HEBE mode")
+            Mode.SCRAPPER -> scrapper.getNotes().mapNotes()
+            Mode.HYBRID, Mode.HEBE -> hebe.getNotes().mapHebeNotes()
         }
     }
 

@@ -78,3 +78,5 @@ classes
 .idea/kotlinScripting.xml
 Snap.*.trc
 javacore.*.txt
+.env
+sdk-hebe/src/test/kotlin/io/github/freewulkanowy/sdk/hebe/.env

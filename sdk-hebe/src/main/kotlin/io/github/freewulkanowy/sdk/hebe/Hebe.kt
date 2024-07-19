@@ -17,6 +17,7 @@ import io.github.freewulkanowy.sdk.hebe.models.MergedLesson
 import io.github.freewulkanowy.sdk.hebe.models.Message
 import io.github.freewulkanowy.sdk.hebe.models.MessageBox
 import io.github.freewulkanowy.sdk.hebe.models.MessagePayload
+import io.github.freewulkanowy.sdk.hebe.models.Note
 import io.github.freewulkanowy.sdk.hebe.models.Timetable
 import io.github.freewulkanowy.sdk.hebe.models.TimetableDayHeader
 import io.github.freewulkanowy.sdk.hebe.models.generateDayHeadersAndAdditionals
@@ -247,5 +248,11 @@ class Hebe {
 
     suspend fun sendMessage(payload: ApiRequest<MessagePayload>): MessagePayload {
         return studentRepository.sendMessage(payload)
+    }
+
+    suspend fun getNotes(): List<Note> {
+        return studentRepository.getNotes(
+            pupilId = pupilId,
+        )
     }
 }

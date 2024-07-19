@@ -26,7 +26,9 @@ internal fun List<HebeExam>.mapExams() = map {
         description = it.content ?: "Nieznany",
         subject = it.subject?.name ?: "Nieznany",
         teacher = it.creator?.displayName ?: "Nieznany",
-        teacherSymbol = "",
+        teacherSymbol = it.creator?.displayName?.split(" ")
+            ?.mapNotNull { it.firstOrNull()?.uppercase() }
+            ?.joinToString("") ?: "",
         type = it.type ?: "Nieznany",
     )
 }

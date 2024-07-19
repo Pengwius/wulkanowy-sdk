@@ -15,6 +15,7 @@ import io.github.freewulkanowy.sdk.hebe.models.LuckyNumber
 import io.github.freewulkanowy.sdk.hebe.models.Message
 import io.github.freewulkanowy.sdk.hebe.models.MessageBox
 import io.github.freewulkanowy.sdk.hebe.models.MessagePayload
+import io.github.freewulkanowy.sdk.hebe.models.Note
 import io.github.freewulkanowy.sdk.hebe.service.StudentService
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -99,6 +100,12 @@ internal class StudentRepository(private val studentService: StudentService) {
     suspend fun sendMessage(payload: ApiRequest<MessagePayload>): MessagePayload {
         return studentService.sendMessage(payload)
             .getEnvelopeOrThrowError()!!
+    }
+
+    suspend fun getNotes(pupilId: Int): List<Note> {
+        return studentService.getNotes(
+            createQueryMap(pupilId = pupilId)
+        ).getEnvelopeOrThrowError().orEmpty()
     }
 
     private fun createQueryMap(

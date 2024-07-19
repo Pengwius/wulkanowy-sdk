@@ -15,6 +15,7 @@ import io.github.freewulkanowy.sdk.hebe.models.LuckyNumber
 import io.github.freewulkanowy.sdk.hebe.models.Message
 import io.github.freewulkanowy.sdk.hebe.models.MessageBox
 import io.github.freewulkanowy.sdk.hebe.models.MessagePayload
+import io.github.freewulkanowy.sdk.hebe.models.Note
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
@@ -61,4 +62,7 @@ internal interface StudentService {
 
     @POST("api/mobile/messagebox/message")
     suspend fun sendMessage(@Body payload: ApiRequest<MessagePayload>): ApiResponse<MessagePayload>
+
+    @GET("api/mobile/note/byPupil")
+    suspend fun getNotes(@QueryMap query: Map<String, Any?>): ApiResponse<List<Note>>
 }
